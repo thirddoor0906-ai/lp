@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アニキせどりサロン</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=Bebas+Neue&family=Anton&display=swap" rel="stylesheet">
+<style>
+/* ── TOKENS ── */
+:root{
+  --bg:#060606;
+  --s1:#0E0E0E;
+  --s2:#141414;
+  --gold:#FFD84D;
+  --gold2:#C49A00;
+  --fire:#FF3A1A;
+  --w:#FFFFFF;
+  --w2:#CCCCCC;
+  --dim:#555;
+  --line:rgba(255,216,77,.1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--w);font-family:'Noto Sans JP',sans-serif;overflow-x:hidden;}
+img{display:block;width:100%;object-fit:cover;}
+a{text-decoration:none;}
+
+/* ── GRAIN ── */
+body::after{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+  mix-blend-mode:screen;
+}
+
+/* ── TICKER ── */
+.ticker{
+  position:sticky;top:0;z-index:300;
+  height:36px;background:#0A0A0A;
+  border-bottom:1px solid rgba(255,216,77,.15);
+  overflow:hidden;display:flex;align-items:center;
+}
+.ticker-t{display:flex;white-space:nowrap;animation:tick 20s linear infinite;}
+.ticker-t b{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.18em;color:var(--gold);padding:0 28px;font-weight:400;}
+.ticker-t i{color:#222;padding:0 4px;font-style:normal;}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ══════════════════════
+   HERO
+══════════════════════ */
+.hero{
+  min-height:100svh;
+  display:grid;grid-template-rows:1fr auto;
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 100% 70% at 60% 20%, rgba(196,154,0,.14) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(255,58,26,.07) 0%, transparent 50%),
+    var(--bg);
+}
+
+/* grid lines */
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,216,77,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,216,77,.04) 1px,transparent 1px);
+  background-size:56px 56px;
+}
+
+/* big ghost number */
+.hero-ghost{
+  position:absolute;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(240px,55vw,560px);
+  color:rgba(255,255,255,.022);
+  right:-40px;top:50%;transform:translateY(-50%);
+  line-height:1;pointer-events:none;letter-spacing:-.03em;
+  user-select:none;
+}
+
+.hero-body{
+  display:flex;flex-direction:column;
+  justify-content:center;
+  padding:80px 28px 40px;
+  position:relative;z-index:2;
+  max-width:880px;margin:0 auto;width:100%;
+}
+
+/* HERO top label — BIG IMPACT */
+.eyebrow{
+  display:flex;flex-direction:column;gap:6px;
+  margin-bottom:24px;
+}
+.eyebrow-main{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(28px,6vw,52px);
+  letter-spacing:.08em;
+  color:var(--gold);
+  line-height:1;
+  text-shadow:0 0 30px rgba(255,216,77,.5);
+}
+.eyebrow-sub{
+  display:flex;align-items:center;gap:10px;
+  font-size:11px;letter-spacing:.22em;color:var(--dim);
+  text-transform:uppercase;font-weight:700;
+}
+.eyebrow-sub::before{content:'';width:18px;height:1px;background:var(--gold2);}
+
+/* alert badge */
+.alert-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--fire);color:#fff;
+  font-size:17px;font-weight:900;letter-spacing:.1em;
+  padding:14px 28px;margin-bottom:28px;
+  animation:ablink 1.8s ease-in-out infinite;
+  width:fit-content;
+}
+@keyframes ablink{0%,100%{box-shadow:0 0 0 0 rgba(255,58,26,.7)}50%{box-shadow:0 0 0 10px rgba(255,58,26,0)}}
+
+/* MASSIVE headline */
+.hero-h{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(88px,24vw,220px);
+  line-height:.82;letter-spacing:-.01em;
+  margin-bottom:28px;
+}
+.hero-h .w{display:block;color:var(--w);}
+.hero-h .gld{
+  display:block;
+  background:linear-gradient(135deg,#FFF8B0,var(--gold),var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  filter:drop-shadow(0 0 50px rgba(255,216,77,.55));
+  animation:gbreathe 3s ease-in-out infinite;
+}
+@keyframes gbreathe{0%,100%{filter:drop-shadow(0 0 30px rgba(255,216,77,.45))}50%{filter:drop-shadow(0 0 70px rgba(255,216,77,.95))}}
+.hero-h .out{display:block;-webkit-text-stroke:1.5px rgba(255,255,255,.12);color:transparent;}
+
+/* hook */
+.hero-hook{
+  font-size:clamp(20px,3.5vw,28px);font-weight:700;
+  line-height:1.65;color:rgba(255,255,255,.7);
+  max-width:440px;margin-bottom:40px;
+}
+.hero-hook .fire{color:var(--fire);}
+.hero-hook .gold{color:var(--gold);}
+
+/* stat bar */
+.stat-bar{
+  display:flex;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  margin-bottom:44px;
+}
+.sitem{
+  flex:1;padding:14px 0 14px 14px;
+  border-right:1px solid var(--line);
+}
+.sitem:last-child{border-right:none;}
+.sn{font-family:'Anton',sans-serif;font-size:clamp(20px,4vw,32px);color:var(--gold);line-height:1;text-shadow:0 0 18px rgba(255,216,77,.4);}
+.sl{font-size:12px;color:var(--dim);letter-spacing:.1em;margin-top:3px;}
+
+/* CTA */
+.hero-cta{
+  display:flex;flex-direction:column;align-items:flex-start;gap:0;
+  background:linear-gradient(135deg,#FFE84D,var(--gold),var(--gold2));
+  color:var(--bg);
+  padding:20px 44px 16px 32px;
+  clip-path:polygon(0 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,0 100%);
+  box-shadow:0 0 50px rgba(255,216,77,.35);
+  animation:gbreathe 3s ease-in-out infinite;
+  transition:transform .2s;position:relative;overflow:hidden;
+  width:fit-content;
+}
+.cta-line1{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(18px,3.5vw,26px);letter-spacing:.1em;
+  color:var(--bg);line-height:1.1;
+}
+.cta-line2{
+  font-size:10px;font-weight:700;letter-spacing:.08em;
+  color:rgba(0,0,0,.55);line-height:1.5;margin-top:2px;
+}
+.hero-cta::before{
+  content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);
+  animation:sh 2s ease-in-out infinite;
+}
+@keyframes sh{0%{left:-100%}100%{left:200%}}
+.hero-cta:hover{transform:translateX(4px);}
+.hero-note{font-size:14px;color:var(--dim);letter-spacing:.1em;margin-top:10px;}
+
+/* ── FULL BLEED IMAGE PAIR ── */
+.img-pair{display:grid;grid-template-columns:1.7fr 1fr;height:clamp(200px,38vw,380px);gap:3px;}
+.img-pair img{height:100%;filter:brightness(.8) contrast(1.1) saturate(.85);}
+
+/* ══════════════════════
+   UNIVERSAL SECTION
+══════════════════════ */
+.sec{padding:88px 28px;}
+.inner{max-width:880px;margin:0 auto;}
+
+/* section label */
+.slabel{
+  font-size:12px;letter-spacing:.25em;color:var(--dim);
+  text-transform:uppercase;margin-bottom:10px;
+  display:flex;align-items:center;gap:10px;
+}
+.slabel::before{content:'';width:18px;height:1px;background:var(--gold2);}
+
+/* section title */
+.stitle{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(42px,9vw,86px);
+  line-height:.9;letter-spacing:-.01em;
+  margin-bottom:36px;
+}
+.stitle .g{color:var(--gold);}
+.stitle .r{color:var(--fire);}
+.stitle .out{-webkit-text-stroke:1.5px rgba(255,255,255,.2);color:transparent;}
+
+/* body text — NO pure white, always off-tone */
+.body-txt{font-size:17px;color:#999;line-height:1.9;}
+.body-txt strong{color:#C8C0A8;}
+.body-txt .g{color:var(--gold);font-weight:700;}
+
+/* ══════════════════════
+   IMAGE BLOCK utilities
+══════════════════════ */
+.imgb{
+  width:100%;overflow:hidden;position:relative;
+  margin:24px 0;
+}
+.imgb img{
+  max-height:320px;
+  filter:brightness(.82) contrast(1.08) saturate(.8);
+  transition:filter .5s,transform .5s;
+}
+.imgb:hover img{filter:brightness(.9) contrast(1.1) saturate(.95);transform:scale(1.02);}
+.imgb .cap{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(transparent,rgba(0,0,0,.85));
+  font-size:10px;letter-spacing:.14em;color:#666;
+  padding:28px 14px 10px;font-family:'Bebas Neue',sans-serif;
+}
+
+.imgrow{display:flex;gap:3px;margin:24px 0;}
+.imgrow .imgb{flex:1;min-width:90px;margin:0;}
+.imgrow .imgb img{max-height:220px;}
+
+/* placeholder */
+.imgph{
+  background:var(--s1);border:1px dashed #1E1E1E;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:10px;color:#2A2A2A;
+  font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:.2em;
+  margin:24px 0;
+}
+.imgph .ico{font-size:28px;opacity:.35;}
+
+/* ══════════════════════
+   WARNING
+══════════════════════ */
+.warn-sec{
+  padding:88px 28px;
+  background:
+    radial-gradient(ellipse 100% 55% at 50% 0%, rgba(255,58,26,.09) 0%, transparent 55%),
+    var(--s1);
+  position:relative;overflow:hidden;
+}
+.warn-sec::before{
+  content:'!';position:absolute;right:-20px;top:50%;transform:translateY(-50%);
+  font-family:'Anton',sans-serif;font-size:clamp(250px,50vw,500px);
+  color:rgba(255,58,26,.03);line-height:1;pointer-events:none;
+}
+
+.warn-h{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(36px,8vw,80px);
+  line-height:.92;letter-spacing:-.01em;
+  color:var(--w);margin-bottom:40px;
+}
+.warn-h .neon{
+  color:var(--fire);
+  text-shadow:0 0 30px rgba(255,58,26,.7),0 0 60px rgba(255,58,26,.3);
+}
+
+/* checklist */
+.chklist{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+@media(max-width:520px){.chklist{grid-template-columns:1fr;}}
+.chk{
+  padding:13px 16px;
+  background:rgba(255,255,255,.025);
+  border-left:2px solid var(--gold2);
+  display:flex;gap:10px;align-items:flex-start;
+  font-size:16px;font-weight:700;color:#bbb;line-height:1.4;
+  transition:border-left-color .2s,background .2s;
+}
+.chk:hover{border-left-color:var(--gold);background:rgba(255,216,77,.04);}
+.chk::before{content:'✓';color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:17px;flex-shrink:0;margin-top:-1px;}
+
+/* warning note */
+.warn-note{
+  margin-top:48px;background:var(--bg);
+  padding:40px 36px;
+  border:1px solid rgba(255,255,255,.05);
+  position:relative;
+}
+.warn-note::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--fire),var(--gold),var(--fire));
+}
+.wnp{font-size:17px;color:#999;line-height:1.95;margin-bottom:14px;}
+.wnp:last-child{margin-bottom:0;}
+.wnp strong{color:#C8C0A8;}
+.wnp .g{color:var(--gold);font-weight:700;}
+.wnp .r{color:var(--fire);font-weight:700;}
+.warn-shout{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(34px,7vw,64px);
+  color:var(--fire);line-height:1;
+  display:block;margin:22px 0;
+  text-shadow:0 0 40px rgba(255,58,26,.5);letter-spacing:-.01em;
+}
+
+/* ══════════════════════
+   PROFILE / TIMELINE
+══════════════════════ */
+.p-head{display:flex;align-items:center;gap:22px;margin-bottom:48px;flex-wrap:wrap;}
+.p-ava{
+  width:84px;height:84px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--gold2),var(--gold));
+  display:flex;align-items:center;justify-content:center;font-size:36px;
+  clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  box-shadow:0 0 36px rgba(255,216,77,.3);
+}
+.p-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(34px,8vw,68px);color:var(--gold);line-height:.9;text-shadow:0 0 26px rgba(255,216,77,.3);}
+.p-meta{font-size:13px;color:#888;letter-spacing:.1em;margin-top:10px;font-weight:700;}
+
+.tl{display:flex;flex-direction:column;position:relative;}
+.tl::before{content:'';position:absolute;left:17px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--gold),var(--fire) 70%,var(--gold));opacity:.35;}
+.tli{display:flex;gap:24px;padding-bottom:30px;position:relative;}
+.dot{width:36px;height:36px;flex-shrink:0;z-index:1;border:1px solid #252525;background:var(--s1);display:flex;align-items:center;justify-content:center;font-size:14px;}
+.dot.hl{background:var(--gold);border-color:var(--gold);box-shadow:0 0 18px rgba(255,216,77,.5);}
+.tl-body{padding-top:4px;}
+.tl-lbl{font-size:9px;letter-spacing:.2em;color:var(--dim);font-weight:700;margin-bottom:3px;text-transform:uppercase;}
+.tl-t{font-size:16px;font-weight:700;color:#999;line-height:1.6;}
+.tl-big{font-family:'Anton',sans-serif;font-size:clamp(26px,5vw,48px);color:var(--gold);line-height:1;text-shadow:0 0 18px rgba(255,216,77,.4);margin-bottom:3px;}
+.tl-sub{font-size:14px;color:var(--dim);margin-top:3px;}
+
+/* ══════════════════════
+   REASON BANDS
+══════════════════════ */
+.r-band{
+  display:grid;grid-template-columns:clamp(52px,7vw,80px) 1fr;
+  border-top:1px solid rgba(255,255,255,.05);
+  overflow:hidden;
+}
+.r-band:last-of-type{border-bottom:1px solid rgba(255,255,255,.05);}
+.r-band:hover .r-num{background:linear-gradient(180deg,rgba(255,216,77,.2),rgba(196,154,0,.1));}
+
+.r-num{
+  background:linear-gradient(180deg,rgba(255,216,77,.1),rgba(196,154,0,.04));
+  border-right:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(26px,4.5vw,48px);
+  color:var(--gold);
+  writing-mode:vertical-rl;
+  padding:28px 0;
+  transition:background .3s;
+  text-shadow:0 0 14px rgba(255,216,77,.3);
+}
+
+.r-content{padding:36px 32px 40px;background:var(--s1);}
+.r-ttl{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(28px,5vw,48px);
+  line-height:1;letter-spacing:.01em;
+  color:#E0D8C0;margin-bottom:16px;
+}
+.r-ttl .g{color:var(--gold);}
+.r-body-txt{font-size:17px;color:#888;line-height:1.85;}
+.r-body-txt strong{color:#B0A898;}
+.r-body-txt .g{color:var(--gold);font-weight:700;}
+
+/* callout */
+.callout{
+  margin:16px 0;
+  background:rgba(255,216,77,.05);border-left:3px solid var(--gold);
+  padding:16px 20px;
+  font-size:17px;font-weight:700;color:var(--gold);line-height:1.65;
+}
+.callout strong{color:#D4CEB8;}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0;}
+.chip{
+  background:rgba(255,216,77,.06);border:1px solid rgba(255,216,77,.2);
+  color:var(--gold);font-size:15px;font-weight:700;padding:8px 15px;letter-spacing:.04em;
+}
+
+/* fire equation */
+.feq{
+  margin:16px 0;background:var(--bg);
+  border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);
+  padding:28px;text-align:center;
+}
+.feq .f{font-family:'Anton',sans-serif;font-size:clamp(22px,4.5vw,40px);color:#E0D8C0;}
+.feq .f span{color:var(--gold);text-shadow:0 0 20px rgba(255,216,77,.4);}
+.feq .n{font-size:11px;color:var(--dim);margin-top:8px;letter-spacing:.1em;}
+
+/* ══════════════════════
+   AMAZON VS
+══════════════════════ */
+.vsgrid{display:grid;grid-template-columns:1fr auto 1fr;gap:0;margin:36px 0;align-items:stretch;}
+@media(max-width:480px){.vsgrid{grid-template-columns:1fr;}.vs-div{display:none;}}
+.vc{padding:28px 22px;display:flex;flex-direction:column;gap:16px;}
+.vc.bad{background:var(--bg);border:1px solid #181818;}
+.vc.good{background:var(--s2);border:1px solid rgba(255,216,77,.28);box-shadow:0 0 50px rgba(255,216,77,.09);}
+.vc-n{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,3vw,26px);letter-spacing:.04em;}
+.vc.bad .vc-n{color:#333;}
+.vc.good .vc-n{color:var(--gold);text-shadow:0 0 16px rgba(255,216,77,.35);}
+.vc-row{padding-top:12px;border-top:1px solid #141414;}
+.vc-row .lv{font-size:9px;color:var(--dim);letter-spacing:.1em;margin-bottom:4px;text-transform:uppercase;}
+.vc-row .vv{font-weight:900;font-size:15px;}
+.vc.bad .vc-row .vv{color:#2A2A2A;}
+.vc.good .vc-row .vv{color:var(--gold);font-size:18px;}
+.vs-div{display:flex;align-items:center;justify-content:center;padding:0 12px;font-family:'Anton',sans-serif;font-size:28px;color:var(--fire);text-shadow:0 0 16px rgba(255,58,26,.5);}
+
+/* fact box */
+.fbox{background:var(--bg);border-top:2px solid var(--gold);padding:26px;margin:24px 0;text-align:center;}
+.fbox .fb{font-family:'Anton',sans-serif;font-size:clamp(20px,4vw,34px);color:var(--gold);letter-spacing:.02em;}
+.fbox .fs{font-size:12px;color:var(--dim);margin-top:7px;line-height:1.7;}
+
+/* ══════════════════════
+   STRENGTHS
+══════════════════════ */
+.str-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:44px;}
+@media(max-width:520px){.str-grid{grid-template-columns:1fr;}.sc:first-child{grid-column:1;}}
+.sc{background:var(--s1);padding:32px 26px;position:relative;overflow:hidden;transition:background .3s;}
+.sc:hover{background:var(--s2);}
+.sc:first-child{grid-column:auto;background:var(--s2);border-top:2px solid var(--gold2);}
+.sc::before{content:attr(data-n);position:absolute;right:6px;bottom:-18px;font-family:'Anton',sans-serif;font-size:120px;color:rgba(255,255,255,.02);line-height:1;pointer-events:none;}
+.sc-n{font-family:'Anton',sans-serif;font-size:54px;color:var(--gold);line-height:1;margin-bottom:12px;text-shadow:0 0 18px rgba(255,216,77,.25);}
+.sc-ttl{font-size:18px;font-weight:900;color:#D8D0B8;margin-bottom:10px;line-height:1.4;}
+.sc-body{font-size:15px;color:#5A5A5A;line-height:1.85;}
+.sc-body strong{color:#948C7C;}
+
+/* ══════════════════════
+   FAQ
+══════════════════════ */
+.faq-item{border-bottom:1px solid rgba(255,255,255,.05);padding:28px 0;}
+.faq-item:last-child{border-bottom:none;}
+.fq{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start;margin-bottom:12px;}
+.fq-l{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--gold);line-height:1;padding-top:2px;}
+.fq-t{font-size:17px;font-weight:700;color:#ddd;line-height:1.55;}
+.fa{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start;}
+.fa-l{font-family:'Bebas Neue',sans-serif;font-size:22px;color:#222;line-height:1;padding-top:2px;}
+.fa-t{font-size:17px;color:#888;line-height:1.85;}
+.fa-t strong{color:var(--gold);}
+
+/* ══════════════════════
+   CLOSING
+══════════════════════ */
+.dream-wrap{display:flex;flex-wrap:wrap;gap:7px;margin:28px 0;}
+.dream{border:1px solid #1C1C1C;color:#444;font-size:12px;font-weight:700;padding:7px 14px;letter-spacing:.05em;transition:all .2s;cursor:default;}
+.dream:hover{border-color:var(--gold);color:var(--gold);background:rgba(255,216,77,.05);}
+
+.pull-q{
+  margin:44px 0;padding:36px 32px;
+  background:var(--s1);border-left:4px solid var(--gold);
+  box-shadow:-4px 0 36px rgba(255,216,77,.07);
+}
+.pull-q p{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,3.2vw,30px);color:#C8C0A8;line-height:1.45;letter-spacing:.02em;}
+.pull-q p .g{color:var(--gold);text-shadow:0 0 18px rgba(255,216,77,.4);}
+
+/* BIG SHOUT */
+.shout-wrap{margin:68px 0 44px;}
+.shout-pre{font-size:9px;letter-spacing:.38em;color:var(--dim);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.shout-pre::before{content:'';width:18px;height:1px;background:var(--gold2);}
+.shout{font-family:'Anton',sans-serif;font-size:clamp(48px,13vw,118px);line-height:.88;letter-spacing:-.02em;}
+.shout .sw{color:#C8C0A8;display:block;}
+.shout .sg{color:var(--gold);display:block;text-shadow:0 0 50px rgba(255,216,77,.6),0 0 100px rgba(255,216,77,.25);animation:gbreathe 3s ease-in-out infinite;}
+
+/* ══════════════════════
+   FINAL CTA
+══════════════════════ */
+.cta-sec{
+  padding:96px 28px;text-align:center;
+  background:
+    radial-gradient(ellipse 80% 55% at 50% 50%, rgba(196,154,0,.12) 0%, transparent 60%),
+    #060606;
+  position:relative;overflow:hidden;
+}
+.cta-sec::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.cta-inner{max-width:640px;margin:0 auto;position:relative;z-index:1;}
+.cta-ey{font-size:9px;letter-spacing:.38em;color:var(--dim);text-transform:uppercase;margin-bottom:16px;}
+.cta-ttl{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,14vw,116px);line-height:.88;letter-spacing:-.01em;color:#C8C0A8;margin-bottom:16px;}
+.cta-ttl .g{background:linear-gradient(135deg,#FFF8B0,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 28px rgba(255,216,77,.5));}
+.cta-sub{font-size:11px;color:var(--dim);letter-spacing:.14em;font-weight:700;margin-bottom:44px;}
+/* CTA big button — multi-line layout */
+.cta-big{
+  display:block;
+  background:linear-gradient(135deg,#FFE84D,var(--gold),var(--gold2));
+  color:var(--bg);
+  padding:22px 44px 18px;max-width:520px;margin:0 auto 24px;
+  position:relative;overflow:hidden;
+  clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);
+  box-shadow:0 0 60px rgba(255,216,77,.35);
+  animation:gbreathe 3s ease-in-out infinite;
+  transition:transform .2s;
+}
+.cta-big-line1{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(18px,3.5vw,26px);letter-spacing:.1em;
+  color:var(--bg);display:block;line-height:1.1;
+}
+.cta-big-line2{
+  font-size:11px;font-weight:700;letter-spacing:.06em;
+  color:rgba(0,0,0,.5);display:block;margin-top:4px;line-height:1.5;
+}
+.cta-big::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);animation:sh 2s ease-in-out infinite;}
+.cta-big:hover{transform:translateY(-3px);}
+.badge-row2{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;}
+.bb{font-size:10px;color:var(--dim);border:1px solid #1A1A1A;padding:5px 13px;letter-spacing:.1em;}
+
+/* footer */
+footer{background:var(--bg);border-top:1px solid rgba(255,255,255,.04);padding:26px;text-align:center;}
+footer p{font-size:10px;color:#1E1E1E;letter-spacing:.15em;}
+
+/* ── REVEAL ── */
+.rv{opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease;}
+.rv.on{opacity:1;transform:none;}
+.rv.d1{transition-delay:.1s;}.rv.d2{transition-delay:.2s;}.rv.d3{transition-delay:.3s;}
+
+/* ── CTA ATTRACT ── */
+@keyframes ctaBounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-8px);}
+}
+@keyframes ctaGlow{
+  0%,100%{filter:drop-shadow(0 0 8px rgba(255,216,77,.25));}
+  50%{filter:drop-shadow(0 0 28px rgba(255,216,77,.7));}
+}
+.cta-attract{animation:ctaBounce 1.4s ease-in-out infinite,ctaGlow 1.4s ease-in-out infinite;will-change:transform;}
+.cta-attract:hover{animation-play-state:paused;transform:translateY(-8px) scale(1.02);transition:transform .2s;}
+.cta-lead{
+  text-align:center;font-size:clamp(15px,3.6vw,19px);font-weight:900;
+  color:var(--gold);letter-spacing:.08em;
+  margin:0 auto 14px;max-width:640px;
+  text-shadow:0 0 18px rgba(255,216,77,.55);
+}
+.cta-lead::after{
+  content:'▼';display:block;margin-top:6px;font-size:20px;
+  animation:arrowDrop 1s ease-in-out infinite;
+}
+@keyframes arrowDrop{
+  0%,100%{transform:translateY(0);opacity:.65;}
+  50%{transform:translateY(6px);opacity:1;}
+}
+
+/* responsive */
+@media(max-width:600px){
+  .sec,.warn-sec,.cta-sec{padding:68px 20px;}
+  .r-content{padding:28px 20px 32px;}
+  .warn-note{padding:30px 22px;}
+  .cta-big{font-size:17px;padding:20px 28px;}
+}
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-t">
+    <b>🔥 月100万達成者続出</b><i>/</i>
+    <b>💰 せどり歴10年・資産1億</b><i>/</i>
+    <b>🚀 FIRE達成済</b><i>/</i>
+    <b>⚡ 人数限定・入会審査あり</b><i>/</i>
+    <b>🏆 サロン生サロン費回収率99%</b><i>/</i>
+    <b>🔥 月100万達成者続出</b><i>/</i>
+    <b>💰 せどり歴10年・資産1億</b><i>/</i>
+    <b>🚀 FIRE達成済</b><i>/</i>
+    <b>⚡ 人数限定・入会審査あり</b><i>/</i>
+    <b>🏆 サロン生サロン費回収率99%</b><i>/</i>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-ghost">100</div>
+
+  <div class="hero-body">
+    <div class="eyebrow">
+      <img decoding="async" src="images/embedded_3958ded570.webp" style="width:100%;max-width:700px;display:block;border-radius:6px;margin-bottom:16px;" loading="lazy">
+    </div>
+    <div class="alert-badge">⚠ 月100万稼ぎたい人 限定</div>
+
+    <h1 class="hero-h">
+      <span class="w">月収</span>
+      <span class="gld">100万</span>
+      <span class="out">SEDORI</span>
+    </h1>
+
+    <p class="hero-hook" style="font-size:clamp(22px,4vw,36px);line-height:1.7;">
+      <span class="fire" style="font-size:clamp(28px,5vw,48px);font-weight:900;">最短ルートで稼ぐ。</span><br>
+      <span style="color:var(--gold);font-weight:900;">資産1億・せどりのプロ集団</span>が直接指導<br>
+      <span style="color:#C8C0A8;font-size:clamp(18px,3vw,28px);">せどりのプロが助け合って<br>みんなで稼ぐサロン</span>
+    </p>
+
+    <div class="stat-bar">
+      <div class="sitem"><div class="sn">10年</div><div class="sl">せどり歴</div></div>
+      <div class="sitem"><div class="sn">1億+</div><div class="sl">資産</div></div>
+      <div class="sitem"><div class="sn">1,000人</div><div class="sl">面談実績</div></div>
+      <div class="sitem"><div class="sn">99%+</div><div class="sl">回収率</div></div>
+    </div>
+
+    <p class="cta-lead">無料体験はこちらから</p>
+    <a href="https://lin.ee/FY6fDYf" target="_blank" class="cta-attract" style="display:block;width:100%;max-width:640px;">
+      <img decoding="async" src="images/embedded_40b20f5248.webp" style="width:100%;display:block;border-radius:6px;box-shadow:0 8px 40px rgba(255,216,77,.3);" loading="lazy">
+    </a>
+    <p class="hero-note" style="font-size:15px;color:#888;letter-spacing:.08em;margin-top:14px;">※ 入会審査あり　募集自体は不定期になります</p>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<div class="img-pair">
+  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1559526324-593bc073d938?w=1000&q=85" onerror="this.style.display='none'" alt="">
+  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=85" onerror="this.style.display='none'" alt="">
+</div>
+
+<!-- ══ WARNING ══ -->
+<section class="warn-sec">
+  <div class="inner">
+    <p class="slabel">Target</p>
+    <h2 class="warn-h rv">
+      以下に当てはまる人<br>
+      <span class="neon">しか来ないでください</span>
+    </h2>
+
+    <div class="chklist rv">
+      <div class="chk">1000万円を最短で貯めたい</div>
+      <div class="chk">ハイリスクなお金稼ぎは避けたい</div>
+      <div class="chk">今の仕事を辞めてFIREしたい</div>
+      <div class="chk">不動産・株で不労所得を稼ぎたい</div>
+      <div class="chk">起業のための資金を最短で作りたい</div>
+      <div class="chk">とにかく月100万欲しい</div>
+      <div class="chk">将来的に海外移住したい</div>
+      <div class="chk">ブランド物を買い漁りたい</div>
+      <div class="chk">タワマンに住みたい</div>
+      <div class="chk">異性にモテたい</div>
+      <div class="chk">国内・海外旅行に行きまくりたい</div>
+      <div class="chk">高級レストランに行きたい</div>
+    </div>
+
+    <!-- image after checklist -->
+    <div class="rv" style="margin-top:32px;">
+      <img loading="lazy" decoding="async" src="images/embedded_afeb4371b6.webp" alt="これが手に入る" style="width:100%;height:auto;display:block;border-radius:6px;object-fit:contain;">
+    </div>
+
+    <div class="warn-note rv">
+      <img decoding="async" src="images/embedded_c8e911a21a.webp" style="width:100%;display:block;margin:16px 0;border-radius:4px;" loading="lazy">
+      <p class="wnp">
+  <span style="font-size:22px;font-weight:700;color:#C8C0A8;">欲とはビジネスをするための<span style="color:var(--gold);font-size:26px;">ガソリン</span>です。</span>
+</p>
+<img decoding="async" src="images/embedded_04f6dbf909.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+<p class="wnp" style="font-size:18px;color:#999;margin-top:12px;">
+  「月10万だけ稼げればいいです」みたいな<br><span style="color:#bbb;font-weight:700;font-size:20px;">欲が低い人</span>がたまに来るのですが、
+</p>
+<img decoding="async" src="images/embedded_81f4206e35.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+      <img decoding="async" src="images/embedded_21865076d6.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+      <img decoding="async" src="images/embedded_90b97b8ed8.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROFILE ══ -->
+<section class="sec" style="background:linear-gradient(180deg,var(--s1),var(--bg));">
+  <div class="inner">
+    <p class="slabel">Self Introduction</p>
+    <h2 class="stitle rv"><span style="-webkit-text-stroke:1.5px rgba(255,216,77,.5);color:transparent;">自己</span><span class="g">紹介</span></h2>
+
+    <div class="p-head rv">
+      <div style="position:relative;"><img decoding="async" src="images/embedded_0750af3a94.webp" style="width:100px;height:100px;object-fit:cover;border-radius:50%;border:3px solid var(--gold);box-shadow:0 0 20px rgba(255,216,77,.4);flex-shrink:0;" loading="lazy"></div>
+      <div>
+        <div class="p-name">転売アニキ</div>
+        <div class="p-meta" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
+          <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,216,77,.12);border:1px solid rgba(255,216,77,.35);border-radius:4px;padding:8px 16px;font-size:14px;font-weight:700;color:var(--gold);letter-spacing:.05em;">🐦 X（旧Twitter）で活動中</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,216,77,.12);border:1px solid rgba(255,216,77,.35);border-radius:4px;padding:8px 16px;font-size:14px;font-weight:700;color:var(--gold);letter-spacing:.05em;">⏱ せどり歴10年</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,216,77,.12);border:1px solid rgba(255,216,77,.35);border-radius:4px;padding:8px 16px;font-size:14px;font-weight:700;color:var(--gold);letter-spacing:.05em;">👤 30代</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,216,77,.12);border:1px solid rgba(255,216,77,.35);border-radius:4px;padding:8px 16px;font-size:14px;font-weight:700;color:var(--gold);letter-spacing:.05em;">🐦 フォロワー2万人越え</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- profile image -->
+    <div class="imgb rv">
+      <img decoding="async" src="images/embedded_49dd02b854.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+      
+    </div>
+
+    <div class="tl rv" style="margin-top:44px;">
+      <div class="tli"><div class="dot">🏫</div><div class="tl-body"><div class="tl-lbl">Start</div><div class="tl-t">高校1年で中退 &amp; 大学受験失敗（社不すぎるw）</div></div></div>
+      <div class="tli"><div class="dot">💭</div><div class="tl-body"><div class="tl-lbl">動機</div><div class="tl-t">「FIREしたい」「海外移住したい」「不労所得生活したい」→ 様々なお金稼ぎに挑戦</div></div></div>
+      <div class="tli"><div class="dot">💰</div><div class="tl-body"><div class="tl-lbl">手元資金</div><div class="tl-t">たった <strong style="color:var(--gold);font-size:19px;">20万円</strong> からのスタート</div></div></div>
+      <div class="tli"><div class="dot">📺</div><div class="tl-body"><div class="tl-lbl">転機</div><div class="tl-t">TVで見た「Amazonせどり」に衝撃。翌日即行動。</div></div></div>
+      <div class="tli"><div class="dot hl">💸</div><div class="tl-body"><div class="tl-lbl">せどり2ヶ月目</div><div class="tl-big">月利益 50万円 達成</div></div></div>
+      <div class="tli"><div class="dot">💡</div><div class="tl-body"><div class="tl-lbl">次の一手</div><div class="tl-t">稼いだお金を全てせどりコンサルに全投資</div></div></div>
+      <div class="tli"><div class="dot hl">🚀</div><div class="tl-body"><div class="tl-lbl">半年後</div><div class="tl-big">月収 100万円 達成</div></div></div>
+      <div class="tli"><div class="dot hl">📈</div><div class="tl-body"><div class="tl-lbl">せどり × 情報発信</div><div class="tl-big">月利益 1,000万円 達成</div></div></div>
+      <div class="tli"><div class="dot hl">🏦</div><div class="tl-body"><div class="tl-lbl">資産</div><div class="tl-big">資産 1億円 達成</div></div></div>
+      <div class="tli"><div class="dot hl">🔥</div><div class="tl-body"><div class="tl-lbl">現在</div><div class="tl-big">FIRE 達成</div><div class="tl-sub" style="font-size:16px;color:#888;line-height:1.8;">せどり物販・不動産投資・情報発信<br>株式投資・海外せどり・トレンドせどり・旅せどり</div></div></div>
+    </div>
+
+    <!-- 旅動画 -->
+    <div style="margin-top:32px;" class="rv">
+      <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,3.5vw,32px);color:var(--gold);letter-spacing:.06em;line-height:1.4;margin-bottom:20px;text-align:center;">プーケットの一泊70万越えのリッツと<br>香港の一泊20万の部屋に行ったとき</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <a href="https://youtu.be/o1swaSBzMlU" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px 20px;background:linear-gradient(135deg,rgba(255,0,0,.15),rgba(180,0,0,.08));border:1px solid rgba(255,80,80,.3);border-radius:6px;text-decoration:none;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='none'">
+          <div style="font-size:40px;">▶️</div>
+          <div style="font-size:14px;font-weight:700;color:#E0D8C0;text-align:center;line-height:1.5;">プーケット<br>リッツ・カールトン</div>
+          <div style="font-size:12px;color:#ff6b6b;font-weight:700;">YouTubeで見る →</div>
+        </a>
+        <a href="https://youtu.be/cAUFWw7yQz4" target="_blank" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px 20px;background:linear-gradient(135deg,rgba(255,0,0,.15),rgba(180,0,0,.08));border:1px solid rgba(255,80,80,.3);border-radius:6px;text-decoration:none;transition:transform .2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='none'">
+          <div style="font-size:40px;">▶️</div>
+          <div style="font-size:14px;font-weight:700;color:#E0D8C0;text-align:center;line-height:1.5;">香港・マカオ<br>フォーシーズンズ</div>
+          <div style="font-size:12px;color:#ff6b6b;font-weight:700;">YouTubeで見る →</div>
+        </a>
+      </div>
+      <p style="font-size:13px;color:var(--dim);text-align:center;margin-top:10px;letter-spacing:.1em;">▲ タップするとYouTubeで視聴できます</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY SEDORI — header ══ -->
+<section class="sec" style="background:var(--bg);padding-bottom:0;">
+  <div class="inner">
+    <p class="slabel">Why Sedori</p>
+    <h2 class="stitle rv">なぜ<span class="g">せどり</span>なのか？</h2>
+    <p style="max-width:580px;margin-bottom:0;font-size:19px;color:#aaa;line-height:1.9;" class="rv">株式投資・不動産・アフィリエイト・SNS・Uber Eats……<br>数ある副業の中でなぜ「せどり」なのか。</p>
+  <img decoding="async" src="images/embedded_995c14ab95.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+  </div>
+</section>
+
+<!-- REASON 01 -->
+<div class="r-band rv">
+  <div class="r-num">01</div>
+  <div class="r-content" data-n="01">
+    <h3 class="r-ttl">資金が少なくても<br><span class="g">稼げる金額が大きい</span></h3>
+    <p style="margin-bottom:20px;font-size:clamp(20px,3.5vw,28px);color:#C8C0A8;font-weight:700;line-height:1.6;">株・不動産は<br>「元手が少ない＝稼げる額も小さい」。</p><div style="position:relative;margin:24px 0;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,58,26,.03) 0px,rgba(255,58,26,.03) 2px,transparent 2px,transparent 20px);pointer-events:none;"></div>
+  <div style="padding:36px 28px;background:linear-gradient(135deg,rgba(255,58,26,.12),rgba(180,20,0,.06));border-top:4px solid var(--fire);border-bottom:4px solid var(--fire);text-align:center;position:relative;">
+    <p style="font-size:12px;letter-spacing:.3em;color:rgba(255,58,26,.6);font-weight:700;margin-bottom:12px;">— BUT —</p>
+    <p style="font-family:'Anton',sans-serif;font-size:clamp(48px,10vw,90px);color:var(--fire);text-shadow:0 0 60px rgba(255,58,26,.8),0 0 120px rgba(255,58,26,.3);letter-spacing:.02em;line-height:.9;">せどりは、<br>違う。</p>
+  </div>
+</div>
+    <div class="callout" style="font-size:19px;line-height:2;">
+  💸 資金20万円 → 2ヶ月で<strong style="color:var(--gold);font-size:22px;">月利益50万達成</strong><br>
+  💰 資金100万円 → <strong style="color:var(--gold);font-size:22px;">月300万達成</strong><br>
+  <br>
+  <span style="font-size:21px;color:#C8C0A8;font-weight:700;">しかも、超ローリスク</span><br>
+  <span style="font-size:18px;color:#aaa;">こんなローリスクで大きく稼げるのはせどりしかないです</span>
+</div>
+    <img decoding="async" src="images/embedded_3dcc5bd308.webp" style="width:100%;display:block;margin:16px 0;border-radius:4px;" loading="lazy">
+    
+  </div>
+</div>
+
+<!-- REASON 02 -->
+<div class="r-band rv">
+  <div class="r-num">02</div>
+  <div class="r-content" data-n="02">
+    <h3 class="r-ttl">副業なのに<br><span class="g">生活費が下がる</span></h3>
+    <p class="r-body-txt" style="font-size:18px;color:#999;">せどりは「安く買うテクニック」。勉強すると日常の買い物も得になる。</p>
+    <div class="callout" style="font-size:20px;padding:20px 22px;">💰 <strong style="font-size:24px;color:var(--gold);">5万円節約 ＝ 5万円稼ぐのと同じ</strong></div>
+<img decoding="async" src="images/embedded_8eb46ca226.webp" style="width:100%;display:block;margin:16px 0;border-radius:4px;" loading="lazy">
+    <!-- 実績画像 -->
+
+  </div>
+</div>
+
+<!-- REASON 03 -->
+<div class="r-band rv">
+  <div class="r-num">03</div>
+  <div class="r-content" data-n="03">
+    <h3 class="r-ttl"><span class="g">ローリスク</span> ＆<br><span class="g">ハイリターン</span></h3>
+    <img decoding="async" src="images/embedded_327fd5eee7.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+    <div class="callout">
+      Keepaで仕入れ前に売れているか確認できる<br><br>
+      売れていない → 仕入れない ✋<br>
+      売れている → 仕入れる ✅
+    </div>
+    <div style="position:relative;margin:20px 0;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,216,77,.02) 0px,rgba(255,216,77,.02) 2px,transparent 2px,transparent 16px);pointer-events:none;"></div>
+  <div style="padding:36px 28px;background:linear-gradient(135deg,rgba(255,216,77,.1),rgba(196,154,0,.04));border-top:3px solid var(--gold);border-bottom:3px solid var(--gold);text-align:center;position:relative;">
+    <p style="font-size:16px;letter-spacing:.2em;color:rgba(255,216,77,.8);font-weight:700;margin-bottom:14px;">— Keepaを使えば —</p>
+    <p style="font-family:'Anton',sans-serif;font-size:clamp(36px,7vw,66px);color:var(--gold);text-shadow:0 0 50px rgba(255,216,77,.8);letter-spacing:.02em;line-height:1;">損する方が難しい。</p>
+    <p style="font-size:20px;color:#aaa;margin-top:18px;font-weight:700;">Keepaの見方さえ分かれば<br><span style="color:var(--gold);font-size:24px;font-weight:900;">ローリスクでハイリターン🔥</span></p>
+<img decoding="async" src="images/embedded_d7d8281337.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;border:1px solid rgba(255,255,255,.1);" loading="lazy">
+<p style="font-size:17px;color:#aaa;line-height:1.9;margin-top:4px;">これはとある商品のグラフ<br>このグラフからアマゾンでこの商品が<br><span style="color:#C8C0A8;font-weight:700;">どれだけ売れているのか？いくらで売れているのか？</span><br>がわかります</p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<!-- REASON 04 -->
+<div class="r-band rv">
+  <div class="r-num">04</div>
+  <div class="r-content" data-n="04">
+    <h3 class="r-ttl">色んなものが<br><span class="g">無料🆓になる</span></h3>
+    <div class="chips">
+      <span class="chip">🎬 映画</span><span class="chip">🍣 外食</span>
+      <span class="chip">✈️ 旅行</span><span class="chip">🚗 車</span>
+      <span class="chip">👜 ブランド品</span><span class="chip">📱 iPhone</span>
+    </div>
+    <p class="r-body-txt">
+      🎬 映画のついでにグッズを転売 → 映画代タダ<br>
+      🍣 コラボグッズを転売 → 外食代タダ<br>
+      ✈️ クレカポイント → マイルに変えて飛行機・ホテル代タダ<br>
+      🚗 リセールが良い車・ブランド品を買えば実質タダ<br>
+      &nbsp;&nbsp;&nbsp;（ランクル・ベルファイア・エルメスバーキンなど）<br>
+      📱 ポイント付与ECで買い、1年で買い換えれば実質タダ
+    </p>
+    
+    <img decoding="async" src="images/embedded_8e5f074b43.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+
+  </div>
+</div>
+
+<!-- REASON 05 -->
+<div class="r-band rv" style="margin-bottom:0;">
+  <div class="r-num">05</div>
+  <div class="r-content" data-n="05">
+    <h3 class="r-ttl">FIREしたい人が<br>一番学ぶべきが<span class="g">「せどり」</span></h3>
+    <div class="feq">
+      <div class="f"><span>収入</span> − <span>生活費</span> ＞ 0</div>
+      <div class="n" style="font-size:16px;color:#aaa;margin-top:10px;font-weight:700;letter-spacing:.1em;">これがFIREの条件</div>
+    </div>
+    <!-- big visual claim UPGRADED -->
+    <div style="margin:28px 0;display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;align-items:center;gap:20px;padding:22px 24px;background:linear-gradient(135deg,rgba(255,216,77,.12),rgba(196,154,0,.06));border-left:5px solid var(--gold);border:1px solid rgba(255,216,77,.25);border-left:5px solid var(--gold);">
+        <span style="font-family:'Anton',sans-serif;font-size:52px;color:var(--gold);text-shadow:0 0 20px rgba(255,216,77,.5);line-height:1;flex-shrink:0;">①</span>
+        <div>
+          <div style="font-family:'Anton',sans-serif;font-size:clamp(24px,5vw,42px);color:#E0D8C0;letter-spacing:.02em;line-height:1;text-shadow:0 0 16px rgba(255,255,255,.1);">収入を最速で上げる</div>
+          <div style="font-size:13px;color:var(--gold);font-weight:700;margin-top:6px;">💸 資金20万 → 月50万が2ヶ月で可能</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px;padding:22px 24px;background:linear-gradient(135deg,rgba(255,216,77,.12),rgba(196,154,0,.06));border:1px solid rgba(255,216,77,.25);border-left:5px solid var(--gold);">
+        <span style="font-family:'Anton',sans-serif;font-size:52px;color:var(--gold);text-shadow:0 0 20px rgba(255,216,77,.5);line-height:1;flex-shrink:0;">②</span>
+        <div>
+          <div style="font-family:'Anton',sans-serif;font-size:clamp(24px,5vw,42px);color:#E0D8C0;letter-spacing:.02em;line-height:1;text-shadow:0 0 16px rgba(255,255,255,.1);">生活費を自動的に下げる</div>
+          <div style="font-size:13px;color:var(--gold);font-weight:700;margin-top:6px;">✂️ せどりスキル＝安く買う技術だから</div>
+        </div>
+      </div>
+    </div>
+<img decoding="async" src="images/embedded_08464eaadd.webp" style="width:100%;display:block;margin:16px 0;border-radius:4px;" loading="lazy">
+
+  </div>
+</div>
+
+<!-- ══ AMAZON VS ══ -->
+<section class="sec" style="background:linear-gradient(180deg,var(--s1),var(--bg));">
+  <div class="inner">
+    <p class="slabel">Amazon vs Others</p>
+    <h2 class="stitle rv">なぜ<span class="g">Amazon</span>なのか？</h2>
+<img decoding="async" src="images/embedded_f37817340c.webp" style="width:100%;display:block;margin:16px 0;border-radius:4px;" loading="lazy">
+
+    <h3 style="font-size:18px;font-weight:900;color:#fff;margin:36px 0 12px;">① FBAが使える</h3>
+    <p class="body-txt rv" style="margin-bottom:8px;">メ〇カリは100人に売れたら100回発送。AmazonのFBAは1回まとめて倉庫に送るだけ。あとはAmazonが100人に発送してくれる。<strong>100回の発送が1回になる。</strong></p>
+    <p class="body-txt rv" style="margin-bottom:28px;"><span style="color:var(--gold);font-weight:700;">月100万稼ぐ人に必要なツール。FBAはAmazonだけ。</span></p>
+
+    <div class="vsgrid rv">
+      <div class="vc bad">
+        <div class="vc-n">メ〇カリ</div>
+        <div class="vc-row"><div class="lv">100人に売れたら</div><div class="vv">100回 発送</div></div>
+        <div class="vc-row"><div class="lv">利益商品数</div><div class="vv">約100個</div></div>
+        <div class="vc-row"><div class="lv">月50万稼ぐのは</div><div class="vv">かなり大変</div></div>
+      </div>
+      <div class="vs-div">VS</div>
+      <div class="vc good">
+        <div class="vc-n">Amazon FBA</div>
+        <div class="vc-row"><div class="lv">100人に売れたら</div><div class="vv">1回 発送するだけ</div></div>
+        <div class="vc-row"><div class="lv">利益商品数</div><div class="vv">約100,000個</div></div>
+        <div class="vc-row"><div class="lv">時間がなくても</div><div class="vv">月100万 可能</div></div>
+      </div>
+    </div>
+
+    <h3 style="font-size:18px;font-weight:900;color:#fff;margin:44px 0 12px;">② 利益商品の多さが圧倒的</h3>
+    
+    <div style="margin:24px 0;padding:32px 24px;background:linear-gradient(135deg,rgba(255,216,77,.1),rgba(196,154,0,.05));border:1px solid rgba(255,216,77,.3);text-align:center;" class="rv">
+      <p style="font-family:'Anton',sans-serif;font-size:clamp(28px,6vw,56px);color:var(--gold);line-height:1.1;text-shadow:0 0 40px rgba(255,216,77,.6);letter-spacing:.01em;">メ〇カリで100個なら、<br>Amazonは<span style="font-size:clamp(40px,9vw,80px);color:#FFF8B0;">100,000個。</span></p>
+    </div>
+    <img decoding="async" src="images/embedded_04148282e1.webp" style="width:100%;display:block;margin:16px 0;border-radius:4px;" loading="lazy">
+    
+    <p class="body-txt rv" style="margin-bottom:20px;">なぜなら集客力が圧倒的にAmazonが一強だから。<br>売る側は高く売れるプラットフォームを選ぶべき。</p>
+
+    <div class="fbox rv">
+      <div class="fb">間違いなくAmazonの方が高い</div>
+      <div class="fs" style="font-size:15px;color:#aaa;margin-top:8px;">リモコン・電子レンジ・おもちゃ……なんでも新品価格をAmazonとメ〇カリで比較してみてください</div>
+    </div>
+
+    </div>
+    
+    <!-- 対比画像：喜んでいる人 vs そうでない人 -->
+    
+  </div>
+</section>
+
+<!-- ══ STRENGTHS ══ -->
+<section class="sec" style="background:var(--bg);">
+  <div class="inner">
+    <p class="slabel">Our Strength</p>
+    <h2 class="stitle rv">アニキサロンの<br><span class="g">4つの強み</span></h2>
+
+    <div class="str-grid">
+      <div class="sc rv" data-n="01">
+        <div class="sc-n">01</div>
+        <div class="sc-ttl">圧倒的な情報量</div>
+        <img decoding="async" src="images/embedded_528119ef53.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+        <p class="sc-body">他のサロンの比じゃない情報量。SNSのせどり情報・生産終了案内・セール情報・プレ値チェック——全部まとめて配信するから<strong>仕入れだけに集中できる。</strong></p>
+      </div>
+      <div class="sc rv d1" data-n="02">
+        <div class="sc-n">02</div>
+        <div class="sc-ttl">AIが拾えない情報を配信</div>
+        <img decoding="async" src="images/embedded_0a6107c4da.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+        <p class="sc-body">「この店舗でこの商品が安くなっている」「レジ落ちしている」——<strong>アナログな現地情報</strong>こそAI時代に最も価値が高い。</p>
+      </div>
+      <div class="sc rv d2" data-n="03">
+        <div class="sc-n">03</div>
+        <div class="sc-ttl">圧倒的なサポート力</div>
+        <img decoding="async" src="images/embedded_3f11513b36.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+        <p class="sc-body">利益情報の配信はもちろん、真贋調査・クレーム・トラブル対応まで。<strong>初心者にはマニュアル配布、中上級者には融資・不動産投資の相談も。</strong></p>
+      </div>
+      <div class="sc rv d3" data-n="04">
+        <div class="sc-n">04</div>
+        <div class="sc-ttl">サロン生サロン費回収率99%</div>
+        <img decoding="async" src="images/embedded_3245234d47.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+        <p class="sc-body">サロン費が稼げなかったという報告は全体の<strong>1%未満。</strong>入会時にまず利益商品を教えるから、回収できて当たり前の設計。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ RESULTS ══ -->
+<section class="sec" style="background:var(--s1);">
+  <div class="inner">
+    <p class="slabel">Real Results</p>
+    <h2 class="stitle rv">実績者<span class="g">報告</span></h2>
+    <p class="body-txt rv" style="margin-bottom:32px;">サロン生から続々と実績報告が届いています🔥</p>
+
+    <!-- 利益額ハイライト（数字系） -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:28px;" class="rv">
+      <div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_c592834908.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_3ee060d170.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_cab9aaf4b1.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_56fdf6cf65.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_61d98799fc.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_c89bf82ffe.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_2e04aa43ae.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_e6f84b72e1.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_f4e51b5b58.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_9bc11e887e.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_0f390ce9cf.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_026b138660.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_b42e41260e.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_f2f95e1d37.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_1136142e7d.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_c9bfcf6f3f.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_bd0d12aee8.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_4c51c3eaea.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_8cda943e3f.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_4122e7a49c.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_0d90549496.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_cd1081c208.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_9381d07630.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_65253697f4.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_f6f25f0345.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;background:var(--s1);border:1px solid rgba(255,216,77,.15);border-top:3px solid var(--gold);"><img decoding="async" src="images/embedded_d60ec2bf0b.webp" style="width:100%;display:block;" loading="lazy"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ 10年実績 ══ -->
+<section class="sec" style="background:var(--s1);">
+  <div class="inner">
+    <p class="slabel">Track Record</p>
+    <h2 class="stitle rv">せどりサロンの<br><span class="g">10年以上の実績</span></h2>
+    <div style="margin-bottom:36px;" class="rv">
+      <p style="font-size:clamp(18px,3vw,26px);color:#C8C0A8;font-weight:700;line-height:1.8;">これまでたくさんの大量仕入れの経験を<br>サロン生全員に伝えています</p>
+    </div>
+    <div class="rv" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:36px;">
+      <img decoding="async" src="images/IMG_5193.webp" alt="大量仕入れ実績1" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(255,216,77,.25);border-radius:2px;display:block;">
+      <img decoding="async" src="images/IMG_5197.webp" alt="大量仕入れ実績2" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(255,216,77,.25);border-radius:2px;display:block;">
+      <img decoding="async" src="images/IMG_6910.webp" alt="大量仕入れ実績3" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(255,216,77,.25);border-radius:2px;display:block;">
+      <img decoding="async" src="images/IMG_6918.webp" alt="大量仕入れ実績4" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(255,216,77,.25);border-radius:2px;display:block;">
+      <img decoding="async" src="images/IMG_7165.webp" alt="大量仕入れ実績5" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(255,216,77,.25);border-radius:2px;display:block;">
+      <img decoding="async" src="images/IMG_7166.webp" alt="大量仕入れ実績6" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(255,216,77,.25);border-radius:2px;display:block;">
+      <img decoding="async" src="images/IMG_7281.webp" alt="大量仕入れ実績7" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(255,216,77,.25);border-radius:2px;display:block;">
+      <img decoding="async" src="images/IMG_7805.webp" alt="大量仕入れ実績8" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border:1px solid rgba(255,216,77,.25);border-radius:2px;display:block;">
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin-bottom:20px;" class="rv">
+      <div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_5b8670891d.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_95cb2a444d.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_393ebf0107.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_8f02750001.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_95cb2a444d.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_5b8670891d.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_cea2d31f32.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_0ed9f549f3.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_7c4fa3f9fd.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_14bf9dd7d8.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_be946f6f6a.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_7c4fa3f9fd.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_b3dbe3aea6.webp" style="width:100%;display:block;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_ca2f14eb9e.webp" style="width:100%;display:block;" loading="lazy"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;" class="rv">
+      <div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_0a7de0f140.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_f1a19241f0.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_632f809454.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_836bf4b7f9.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_9235c76cdf.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_4259fdf04f.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_542dcbcbc5.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_df4b3f7fdc.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_7f0eec4d50.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_ca9b43b606.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_51f2a49344.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_64be10087a.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_bae7d97122.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_fa452f46cc.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_4c4d10c5ed.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_c4c13b9aeb.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_61c1ca6682.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_c98375e5df.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_d291d189f8.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div><div style="overflow:hidden;border-radius:2px;"><img decoding="async" src="images/embedded_2b6d69bb38.webp" style="width:100%;display:block;object-fit:cover;" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="sec" style="background:var(--bg);">
+  <div class="inner">
+    <p class="slabel">FAQ</p>
+    <h2 class="stitle rv">よくある<br><span class="g">Q&amp;A</span></h2>
+    <div style="margin-top:48px;">
+
+      <div class="faq-item rv">
+        <div class="fq"><span class="fq-l">Q</span><span class="fq-t">サロン代が稼げなくて損したらどうしよう。</span></div>
+        <div class="fa"><span class="fa-l">A</span><span class="fa-t">サロン代が稼げなかったという報告は全体の<strong>1%未満</strong>。その1％も<strong>こちらの教えを全部無視した方</strong>になります。入会時に利益商品を最初にお伝えし、サロン代回収を最優先にサポートします。</span></div>
+      </div>
+
+      <div class="faq-item rv">
+        <div class="fq"><span class="fq-l">Q</span><span class="fq-t">全くの初心者でもAmazon出品できますか？</span></div>
+        <div class="fa"><span class="fa-l">A</span><span class="fa-t">私自身も機械音痴ですが<strong>2〜3回やればすぐ慣れます。</strong>スタートアップマニュアルを配布、わからなければ講師が無制限で対応します。</span></div>
+      </div>
+
+      <div class="faq-item rv">
+        <div class="fq"><span class="fq-l">Q</span><span class="fq-t">副業経験ゼロでも月50万稼げますか？</span></div>
+        <div class="fa"><span class="fa-l">A</span><span class="fa-t">せどりは「情報を入れる → 動く」だけです。<strong>ローリスクでこれほど誰でも月50万稼げる副業は他にない</strong>と断言できます。</span></div>
+      </div>
+
+      <div class="faq-item rv">
+        <div class="fq"><span class="fq-l">Q</span><span class="fq-t">サロンをどう活用しますか？</span></div>
+        <div class="fa"><span class="fa-l">A</span><span class="fa-t">マニュアルを見て → 情報を見て仕入れに行って → わからなければ聞く。これを繰り返すだけで<strong>確実にスキルが上がっていきます。</strong></span></div>
+      </div>
+
+      <div class="faq-item rv">
+        <div class="fq"><span class="fq-l">Q</span><span class="fq-t">副業でも稼げますか？</span></div>
+        <div class="fa"><span class="fa-l">A</span><span class="fa-t">サロン生の<strong>99%が副業で</strong>せどりをやっています。限られた時間で効率よく稼ぐためにサロンを活用している人がほとんど。</span></div>
+      </div>
+
+      <div class="faq-item rv">
+        <div class="fq"><span class="fq-l">Q</span><span class="fq-t">中上級者にもメリットはありますか？</span></div>
+        <div class="fa"><span class="fa-l">A</span><span class="fa-t">中上級者は私の情報を10→100にする力があるので<strong>継続率が非常に高く、ほぼ辞める方はいません。</strong></span></div>
+      </div>
+
+      <div class="faq-item rv">
+        <div class="fq"><span class="fq-l">Q</span><span class="fq-t">仕入れた商品が売れなかったりして損することはないのでしょうか？とても不安です。</span></div>
+        <div class="fa"><span class="fa-l">A</span><span class="fa-t">基本的に<strong>keepa</strong>やそれに似たツールで、商品を仕入れる前に<strong>売れているかどうかを確認してから仕入れを行います。</strong>メ〇カリでみなさんが商品を出品するときに同じ商品の過去に売れた相場を確認してから出品価格を決めたり、そもそも売れているかも確認しているように、同じことをAmazonでするだけです。<br><br>またそれでも心配であれば<strong>最初は1000円とかの商品を仕入れて売る、それを10回繰り返してから5000円に仕入金額を上げる</strong>。それでもいいと思います。10回仕入れて売るころには最初の質問の悩みもなくなっていると思います。<br><br>また仕入れ判断に困るようであれば<strong>事前に講師に聞いていただければアドバイスもさせていただきます。</strong></span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CLOSING ══ -->
+<section class="sec" style="background:linear-gradient(180deg,var(--s1),var(--bg));">
+  <div class="inner">
+    <p class="slabel">From Aniki</p>
+    <h2 class="stitle rv">FIREや<span class="g">年収1000万</span><br><span class="out">を目指す人へ</span></h2>
+
+    <div class="rv" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:28px 0;">
+      <div style="background:var(--s1);border:1px solid rgba(255,216,77,.2);border-top:3px solid var(--gold);padding:18px 20px;border-radius:2px;">
+        <div style="font-size:24px;margin-bottom:6px;">💰</div>
+        <div style="font-size:16px;font-weight:700;color:#C8C0A8;">1000万円を最短で貯める</div>
+      </div>
+      <div style="background:var(--s1);border:1px solid rgba(255,216,77,.2);border-top:3px solid var(--gold);padding:18px 20px;border-radius:2px;">
+        <div style="font-size:24px;margin-bottom:6px;">🔥</div>
+        <div style="font-size:16px;font-weight:700;color:#C8C0A8;">FIRE達成・会社を辞める</div>
+      </div>
+      <div style="background:var(--s1);border:1px solid rgba(255,216,77,.2);border-top:3px solid var(--gold);padding:18px 20px;border-radius:2px;">
+        <div style="font-size:24px;margin-bottom:6px;">✈️</div>
+        <div style="font-size:16px;font-weight:700;color:#C8C0A8;">海外移住・旅行しまくり</div>
+      </div>
+      <div style="background:var(--s1);border:1px solid rgba(255,216,77,.2);border-top:3px solid var(--gold);padding:18px 20px;border-radius:2px;">
+        <div style="font-size:24px;margin-bottom:6px;">📈</div>
+        <div style="font-size:16px;font-weight:700;color:#C8C0A8;">不動産・株で不労所得</div>
+      </div>
+      <div style="background:var(--s1);border:1px solid rgba(255,216,77,.2);border-top:3px solid var(--gold);padding:18px 20px;border-radius:2px;">
+        <div style="font-size:24px;margin-bottom:6px;">👜</div>
+        <div style="font-size:16px;font-weight:700;color:#C8C0A8;">ブランド品・タワマン</div>
+      </div>
+      <div style="background:var(--s1);border:1px solid rgba(255,216,77,.2);border-top:3px solid var(--gold);padding:18px 20px;border-radius:2px;">
+        <div style="font-size:24px;margin-bottom:6px;">🍽️</div>
+        <div style="font-size:16px;font-weight:700;color:#C8C0A8;">高級レストラン・異性にモテる</div>
+      </div>
+    </div>
+
+    
+
+    <div style="margin:36px 0;padding:48px 36px;background:linear-gradient(135deg,rgba(255,216,77,.1),rgba(255,58,26,.06));border:2px solid var(--gold);position:relative;overflow:hidden;text-align:center;" class="rv">
+      <p style="font-size:18px;color:#aaa;letter-spacing:.15em;margin-bottom:16px;font-weight:700;">— 上記がせどりを始めた時の私の夢でした —</p>
+      <p style="font-family:'Anton',sans-serif;font-size:clamp(54px,13vw,110px);color:var(--gold);line-height:.9;letter-spacing:-.02em;text-shadow:0 0 60px rgba(255,216,77,.8),0 0 120px rgba(255,216,77,.4);">でもこれ<br>全部、叶えました</p>
+      <div style="margin-top:24px;padding:20px 24px;background:rgba(0,0,0,.4);border:1px solid rgba(255,216,77,.3);">
+        <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,3.5vw,28px);color:#E0D8C0;letter-spacing:.06em;line-height:1.3;">全部せどりを始めた時の私の夢でした。<br>ですが、<span style="color:var(--gold);text-shadow:0 0 20px rgba(255,216,77,.5);">ほぼ全て叶っています。</span></p>
+      </div>
+    </div>
+
+    <div style="margin:36px 0 20px;padding:28px 28px;background:var(--s1);border-left:4px solid rgba(255,255,255,.1);" class="rv">
+      <p style="font-size:clamp(17px,2.5vw,22px);color:#aaa;line-height:2;font-weight:500;">私はどんな稼ぎの手法も<br>メリットデメリットがあるので<br>否定も肯定もしませんが<br><br><span style="font-size:clamp(19px,3vw,26px);color:#C8C0A8;font-weight:700;">でも皆さんに一言言いたいです。。。</span></p>
+    </div>
+    <div class="pull-q rv" style="border-left:4px solid var(--gold);background:linear-gradient(135deg,rgba(255,216,77,.08),rgba(196,154,0,.03));padding:36px 32px;">
+      <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,4vw,34px);color:#C8C0A8;line-height:1.5;letter-spacing:.04em;">「<span style="color:var(--gold);text-shadow:0 0 20px rgba(255,216,77,.5);">その稼ぎ方、<br>もう少しお金あってから始めれば、<br>成功の確率や稼ぐ額は<br>大きく上がるよ？</span>」</p>
+    </div>
+
+    <div class="rv" style="margin:36px 0;">
+      <p style="font-size:17px;color:#888;line-height:2;margin-bottom:8px;">元手10万円で株を始めて年利20%でも<span style="color:#aaa;font-weight:700;">たった2万円。</span></p>
+      <div style="padding:24px 28px;background:rgba(255,216,77,.06);border-left:4px solid var(--gold);margin:16px 0;">
+        <p style="font-size:20px;font-weight:700;color:#C8C0A8;line-height:1.7;">だったら<span style="color:var(--gold);">せどりで300万貯めてから</span><br>その300万で株をやった方が、<br><span style="color:var(--gold);">リスクも小さく・稼げる額も大きく</span>なりませんか？</p>
+      </div>
+    </div>
+
+    <div class="rv" style="margin:36px 0;">
+      <p style="font-size:17px;color:#888;line-height:2;margin-bottom:20px;">やる前からごちゃごちゃ考えて、足も動かさないで「やったつもり」になってる人が多すぎる。</p>
+      <div style="padding:20px 28px;background:var(--s1);border-top:2px solid rgba(255,255,255,.08);text-align:center;margin-bottom:20px;">
+        <p style="font-family:'Anton',sans-serif;font-size:clamp(22px,4vw,36px);color:#E0D8C0;line-height:1.2;letter-spacing:.01em;">せどりを始めるのにかかるのは<br><span style="color:var(--gold);font-size:clamp(30px,5.5vw,50px);text-shadow:0 0 24px rgba(255,216,77,.5);">せいぜい月1万円。</span></p>
+      </div>
+<img decoding="async" src="images/embedded_004676c082.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+      <div style="padding:24px 28px;background:linear-gradient(135deg,rgba(255,216,77,.1),rgba(196,154,0,.05));border:1px solid rgba(255,216,77,.3);">
+        <p style="font-size:13px;letter-spacing:.2em;color:var(--dim);font-weight:700;margin-bottom:10px;">— 成功者の共通点 —</p>
+        <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,4.5vw,42px);color:var(--gold);letter-spacing:.06em;line-height:1.15;text-shadow:0 0 20px rgba(255,216,77,.4);">「とりあえずやってみる精神」<br><span style="font-size:clamp(18px,3vw,28px);color:#C8C0A8;">とにかくチャレンジの数が多い。</span></p>
+      </div>
+<img decoding="async" src="images/embedded_4d75678389.webp" style="width:100%;display:block;margin:20px 0;border-radius:4px;" loading="lazy">
+    </div>
+
+
+    <div class="shout-wrap rv"><img decoding="async" src="images/embedded_f913e4d173.webp" style="width:100%;display:block;margin:16px 0;border-radius:4px;" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══ -->
+<section class="cta-sec" id="apply">
+  <div class="cta-inner">
+    <p class="cta-ey">次のステップ</p>
+    <h2 class="cta-ttl">まずは<br><span class="g">無料面談</span><br>から</h2>
+    <p class="cta-sub">入会審査あり ｜ 定員になり次第締め切り ｜ 不定期募集</p>
+    <p class="cta-lead">無料体験はこちらから</p>
+    <a href="https://lin.ee/FY6fDYf" target="_blank" class="cta-attract" style="display:block;width:100%;max-width:640px;margin:0 auto;">
+      <img decoding="async" src="images/embedded_40b20f5248.webp" style="width:100%;display:block;border-radius:6px;box-shadow:0 8px 40px rgba(255,216,77,.3);" loading="lazy">
+    </a>
+    <div class="badge-row2">
+      <span class="bb">👤 審査面談あり</span>
+      <span class="bb">📅 不定期募集</span>
+      <span class="bb">💰 資金1万円の方は審査でお断り</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© アニキせどりサロン All Rights Reserved.</p>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}});
+},{threshold:.07});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
