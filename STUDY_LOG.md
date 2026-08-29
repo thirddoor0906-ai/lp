@@ -16,6 +16,7 @@
 | 8 | 2026-08-30 | I want to live a relaxed life in the country after I retire. | 退職したら田舎でのんびり暮らしたい。 | live a ~ life / the country=田舎 / after+現在形 | |
 | 9 | 2026-08-30 | (Sales increased) 20% over the same period of last year. | (売上は)前年同期比20%増。※スクショ前半欠け・要確認 | over the same period of last year(前年同期比) | |
 | 10 | 2026-08-30 | He came down with a cold and had to be away from work. | 彼は風邪をひいて仕事を休まなければならなかった。 | come down with / be away from work | |
+| 11 | 2026-08-30 | Among the five of us, she, without a doubt, speaks the most languages. | 5人の中で、間違いなく彼女が一番多くの言語を話す。 | the five of us / without a doubt(挿入)/ the most+複数名詞 | |
 
 ## 自分の質問の英訳ストック
 
