@@ -11,6 +11,11 @@
 | 3 | 2026-08-30 | I like her sense of style. | 彼女のファッションセンスが好き。 | sense of X の名詞化(×Her sense is good) | |
 | 4 | 2026-08-30 | Former pop stars are just plain old women by the time they're 40. | かつてのアイドルも40過ぎるとただのおばさんか。 | just plain ~(ただの)/ by the time S+V(〜する頃には) | |
 | 5 | 2026-08-30 | Once you've formed a bad habit, you can't get rid of it easily. | いったん悪い癖がつくと、容易に直すことは出来ない。 | Once+完了形 / form a habit / get rid of | |
+| 6 | 2026-08-30 | I'm going to change clothes. Please look the other way for a minute. | 着替えるから、ちょっとあっちを向いてて。 | look the other way(比喩:見て見ぬふり も) | |
+| 7 | 2026-08-30 | I'll be in touch again as soon as I have more detailed information. | 詳しいことがわかり次第、また連絡します。 | be in touch / as soon as+現在形 | |
+| 8 | 2026-08-30 | I want to live a relaxed life in the country after I retire. | 退職したら田舎でのんびり暮らしたい。 | live a ~ life / the country=田舎 / after+現在形 | |
+| 9 | 2026-08-30 | (Sales increased) 20% over the same period of last year. | (売上は)前年同期比20%増。※スクショ前半欠け・要確認 | over the same period of last year(前年同期比) | |
+| 10 | 2026-08-30 | He came down with a cold and had to be away from work. | 彼は風邪をひいて仕事を休まなければならなかった。 | come down with / be away from work | |
 
 ## 自分の質問の英訳ストック
 
