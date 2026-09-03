@@ -26,6 +26,9 @@
 | instructions on how to ~ | 〜の仕方の説明(前置詞は on) | Here are instructions on how to set it up. | 09-03 |
 | last(動詞) | 持続する、持つ | The battery lasts about six hours. | 09-03 |
 | at the most | せいぜい、多くても | It'll take twenty minutes, at the most. | 09-03 |
+| not in the least | 全然〜ない、少しも | "Do you mind?" "Not in the least." | 09-03 |
+| look after ~ | 〜の世話をする、面倒を見る | Could you look after my dog? | 09-03 |
+| remain(s) to be seen | まだ分からない、今後次第 | Whether it will work remains to be seen. | 09-03 |
 
 ## 構文・型
 
@@ -44,6 +47,12 @@
 | the + 数字 + of us | 私たち〜人 | Among the five of us | 08-30 |
 | the most + 複数名詞 | 一番多くの〜 | speaks the most languages | 08-30 |
 | 現在完了進行形 have been -ing | ずっと〜し続けている | has been growing in recent years | 09-03 |
+| must be ~ | 〜に違いない、〜でしょう(推量) | You must be tired. | 09-03 |
+| Now that S+V | もう〜だから | Now that you're an adult... | 09-03 |
+| it is ~ to do(形式主語) | 〜するのは…だ | It is your duty to look after him. | 09-03 |
+| 仮定法過去完了 | 過去の事実に反する仮定 | If I had known, I would have told you. | 09-03 |
+| 疑問詞節が主語 | 「〜かということ」が主語になる | How they solved it remains a mystery. | 09-03 |
+| 否定の副詞+倒置 | Little/Never/Rarely 文頭で疑問文語順 | Little did I dream that... | 09-03 |
 
 ## けいさんの弱点傾向(随時更新)
 

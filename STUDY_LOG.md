@@ -22,6 +22,11 @@
 | 14 | 2026-09-03 | I may have to come home late. In that case, I'll call you. | 遅くなるかもしれない。その場合は電話するよ。 | may have to(助動詞の重複回避)/ In that case | |
 | 15 | 2026-09-03 | I have attached instructions on how to use FTP to access our files. | 私どものファイルにアクセスするためのFTPの使い方を添付します。 | attach / instructions on how to / 目的のto不定詞 | |
 | 16 | 2026-09-03 | Cherry blossoms last only for a few days, a week at the most. | 桜の花は数日、せいぜい一週間しか持たない。 | last(持続する)/ at the most | |
+| 17 | 2026-09-03 | "You must be tired after a long day." "No, not in the least." | 「長い1日だったのでお疲れでしょう」「いいえ、全然」 | must be(推量)/ not in the least | |
+| 18 | 2026-09-03 | Now that he is old, it is your duty to look after him. | 彼はもう高齢ですから、世話をするのはあなたの務めなのです。 | Now that S+V / 形式主語 it is ~ to do / look after | |
+| 19 | 2026-09-03 | Would you have asked me this question if I had been a man? | 私が男性だったとしても同じ質問をするのですか? | 仮定法過去完了(would have+pp / had+pp) | |
+| 20 | 2026-09-03 | Just when the first human beings will reach Mars remains to be seen. | 人間が最初に火星に到達するのはいつになるか、まだ分かっていない。 | 疑問詞節が主語 / remains to be seen | |
+| 21 | 2026-09-03 | Little did I dream that we would expand our business to the U.S. | 事業をアメリカに広げるとは夢にも思わなかった。 | 否定の副詞が文頭→倒置(Little did I ~) | |
 
 ## 自分の質問の英訳ストック
 
