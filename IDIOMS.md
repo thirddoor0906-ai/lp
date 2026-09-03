@@ -29,6 +29,9 @@
 | not in the least | 全然〜ない、少しも | "Do you mind?" "Not in the least." | 09-03 |
 | look after ~ | 〜の世話をする、面倒を見る | Could you look after my dog? | 09-03 |
 | remain(s) to be seen | まだ分からない、今後次第 | Whether it will work remains to be seen. | 09-03 |
+| It goes without saying that ~ | 〜は言うまでもない | It goes without saying that health comes first. | 09-03 |
+| take 人 in one's arms | 〜を腕に抱く・抱きかかえる | She took the baby in her arms. | 09-03 |
+| stand(自動詞) | 立つ・立っていられる(≠我慢する) | He couldn't stand on his own. | 09-03 |
 
 ## 構文・型
 
@@ -53,6 +56,7 @@
 | 仮定法過去完了 | 過去の事実に反する仮定 | If I had known, I would have told you. | 09-03 |
 | 疑問詞節が主語 | 「〜かということ」が主語になる | How they solved it remains a mystery. | 09-03 |
 | 否定の副詞+倒置 | Little/Never/Rarely 文頭で疑問文語順 | Little did I dream that... | 09-03 |
+| not so much A as B | AというよりむしろB | not so much angry as disappointed | 09-03 |
 
 ## けいさんの弱点傾向(随時更新)
 

@@ -27,6 +27,9 @@
 | 19 | 2026-09-03 | Would you have asked me this question if I had been a man? | 私が男性だったとしても同じ質問をするのですか? | 仮定法過去完了(would have+pp / had+pp) | |
 | 20 | 2026-09-03 | Just when the first human beings will reach Mars remains to be seen. | 人間が最初に火星に到達するのはいつになるか、まだ分かっていない。 | 疑問詞節が主語 / remains to be seen | |
 | 21 | 2026-09-03 | Little did I dream that we would expand our business to the U.S. | 事業をアメリカに広げるとは夢にも思わなかった。 | 否定の副詞が文頭→倒置(Little did I ~) | |
+| 22 | 2026-09-03 | The question is not so much what it is as how it looks. | 問題は、その本質よりもむしろ外観である。 | not so much A as B / 疑問詞節がA・Bに入る | |
+| 23 | 2026-09-03 | It goes without saying that camels are very useful in the Middle East. | ラクダが中東で非常に役立つのは言うまでもない。 | It goes without saying that ~ | |
+| 24 | 2026-09-03 | He took her in his arms to help her, but she couldn't stand. | 彼は彼女を腕で支えて助けたが、彼女は立てなかった。 | take 人 in one's arms / 目的のto不定詞 / stand=立つ | |
 
 ## 自分の質問の英訳ストック
 
