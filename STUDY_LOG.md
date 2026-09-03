@@ -17,6 +17,11 @@
 | 9 | 2026-08-30 | (Sales increased) 20% over the same period of last year. | (売上は)前年同期比20%増。※スクショ前半欠け・要確認 | over the same period of last year(前年同期比) | |
 | 10 | 2026-08-30 | He came down with a cold and had to be away from work. | 彼は風邪をひいて仕事を休まなければならなかった。 | come down with / be away from work | |
 | 11 | 2026-08-30 | Among the five of us, she, without a doubt, speaks the most languages. | 5人の中で、間違いなく彼女が一番多くの言語を話す。 | the five of us / without a doubt(挿入)/ the most+複数名詞 | |
+| 12 | 2026-09-03 | If you leave your textbooks at school during the break, they'll get confiscated. | 休み中に置き勉してると没収されるんだよな。 | leave A at B / get+過去分詞(口語の受け身) | |
+| 13 | 2026-09-03 | This nation's economy has been growing at a rapid pace in recent years. | この国の経済は近年とんとん拍子に成長しています。 | 現在完了進行形 / at a ~ pace | |
+| 14 | 2026-09-03 | I may have to come home late. In that case, I'll call you. | 遅くなるかもしれない。その場合は電話するよ。 | may have to(助動詞の重複回避)/ In that case | |
+| 15 | 2026-09-03 | I have attached instructions on how to use FTP to access our files. | 私どものファイルにアクセスするためのFTPの使い方を添付します。 | attach / instructions on how to / 目的のto不定詞 | |
+| 16 | 2026-09-03 | Cherry blossoms last only for a few days, a week at the most. | 桜の花は数日、せいぜい一週間しか持たない。 | last(持続する)/ at the most | |
 
 ## 自分の質問の英訳ストック
 

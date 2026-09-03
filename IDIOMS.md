@@ -17,6 +17,15 @@
 | do well on the test | テストでいい点を取る(前置詞は on) | I didn't do well on the test. | 08-30 |
 | form a habit | 癖・習慣がつく(makeではなくform) | It takes weeks to form a new habit. | 08-30 |
 | for a minute | ちょっとの間、一瞬 | For a minute I thought you were serious. | 08-30 |
+| get + 過去分詞 | 〜されちゃう(口語の受け身) | My phone got taken away in class. | 09-03 |
+| leave A at B | AをBに置いておく・置き忘れる | Don't leave your bag on the train. | 09-03 |
+| at a ~ pace | 〜なペースで | Prices have been rising at a steady pace. | 09-03 |
+| may have to ~ | 〜しなければならないかもしれない | I may have to cancel. | 09-03 |
+| in that case | その場合は、それなら | In that case, let's meet somewhere else. | 09-03 |
+| attach ~ | 〜を添付する | I've attached the file for your reference. | 09-03 |
+| instructions on how to ~ | 〜の仕方の説明(前置詞は on) | Here are instructions on how to set it up. | 09-03 |
+| last(動詞) | 持続する、持つ | The battery lasts about six hours. | 09-03 |
+| at the most | せいぜい、多くても | It'll take twenty minutes, at the most. | 09-03 |
 
 ## 構文・型
 
@@ -34,6 +43,7 @@
 | X% over the same period of last year | 前年同期比X% | Profits are up 15% over last year. | 08-30 |
 | the + 数字 + of us | 私たち〜人 | Among the five of us | 08-30 |
 | the most + 複数名詞 | 一番多くの〜 | speaks the most languages | 08-30 |
+| 現在完了進行形 have been -ing | ずっと〜し続けている | has been growing in recent years | 09-03 |
 
 ## けいさんの弱点傾向(随時更新)
 
