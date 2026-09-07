@@ -50,6 +50,13 @@
 | in front of people | 人前で | do something like that in front of people | 09-06 |
 | make out ~ | 見分ける、判読する、聞き取る | I can't make out his handwriting. | 09-06 |
 | near-sighted / far-sighted | 近視 / 遠視 | I'm near-sighted. | 09-06 |
+| even for ~ | 〜にとってさえ | extraordinary even for a sumo wrestler | 09-07 |
+| be in the military | 兵役についている、軍人だ | When he was in the military... | 09-07 |
+| conform to ~ | (規則に)従う(前置詞は to) | You must conform to the rules. | 09-07 |
+| lose weight | 体重を減らす(×reduce weight) | If you want to lose weight... | 09-07 |
+| cut down on ~ | 〜を減らす(前置詞は on) | I'm trying to cut down on coffee. | 09-07 |
+| flat on one's back | 寝込んで | I was flat on my back for a week. | 09-07 |
+| with + 病名 | 〜(の病気)で | in bed with the flu | 09-07 |
 
 ## 構文・型
 
@@ -82,6 +89,8 @@
 | 分詞の挿入(コンマで挟む) | 主語を後ろから説明(which was の省略) | The fire, driven by an east wind, ... | 09-06 |
 | 過去形 + 過去進行形 | 「〜した時、〜していた」の重なり | When I went to him he was sleeping. | 09-06 |
 | The 比較級…, the 比較級… | 〜すればするほど… | The more you practice, the better you get. | 09-06 |
+| 数量が主語 → 単数扱い | 250kg / 10 miles などは is | Ten miles is a long way. | 09-07 |
+| not A but B | AではなくB | not what you say but how you say it | 09-07 |
 
 ## けいさんの弱点傾向(随時更新)
 

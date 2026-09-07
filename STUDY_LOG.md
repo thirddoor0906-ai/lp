@@ -43,6 +43,11 @@
 | 35 | 2026-09-06 | I started a new blog. I'll do my best to keep it going. | 新しいブログを始めた。続けられるよう頑張る。 | do one's best to ~ / keep it going | |
 | 36 | 2026-09-06 | There's no way I could do something like that in front of people. | 人前でそんなこと出来るはずもない。 | There's no way S+V / in front of people | |
 | 37 | 2026-09-06 | I'm near-sighted, so I can't make out what is written on that signboard. | 私は近視なので、あの看板に何が書いてあるか分からない。 | make out(判読する)/ what is written(疑問詞節) | |
+| 38 | 2026-09-07 | Two hundred fifty kilograms is an extraordinary weight even for a sumo wrestler. | 250キロというのは相撲取りとしても並外れた体重だ。 | 数量が主語=単数扱い(is)/ even for ~ | |
+| 39 | 2026-09-07 | When he was in the military, he conformed to the strict army rules. | 彼は兵役中は軍隊の厳しい規則に従っていた。 | be in the military / conform **to** ~ | |
+| 40 | 2026-09-07 | If you want to lose weight, you should cut down on between-meal snacks. | 体重を減らしたいのなら、間食は減らすべきだよ。 | lose weight / cut down **on** ~ | |
+| 41 | 2026-09-07 | I was flat on my back for a week with a terrible cold. | ひどい風邪を引いて、1週間寝込んでいた。 | flat on one's back(寝込む)/ with+病名 | |
+| 42 | 2026-09-07 | What's important isn't how many books you read, but what books you read. | 重要なのは何冊読むかでなく、どんな本を読むかである。 | not A but B / 疑問詞節がA・Bに入る | |
 
 ## 自分の質問の英訳ストック
 
