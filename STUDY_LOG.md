@@ -30,6 +30,11 @@
 | 22 | 2026-09-03 | The question is not so much what it is as how it looks. | 問題は、その本質よりもむしろ外観である。 | not so much A as B / 疑問詞節がA・Bに入る | 09-03:× → 次回09-04(翌日) |
 | 23 | 2026-09-03 | It goes without saying that camels are very useful in the Middle East. | ラクダが中東で非常に役立つのは言うまでもない。 | It goes without saying that ~ | 09-03:○ → 次回09-06(2日後) / 09-05:× → 次回09-06(翌日) |
 | 24 | 2026-09-03 | He took her in his arms to help her, but she couldn't stand. | 彼は彼女を腕で支えて助けたが、彼女は立てなかった。 | take 人 in one's arms / 目的のto不定詞 / stand=立つ | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
+| 25 | 2026-09-06 | He listened to the news on the radio as he fed his dog. | 彼は飼い犬に餌をやりながら、ラジオのニュースを聞いた。 | on the radio / as=〜しながら / fed(feedの過去) | |
+| 26 | 2026-09-06 | Forget your troubles for a while and come and have dinner with us. | そんなの忘れてちょっくら晩飯でも食いにこい。 | come and 動詞(×come to eat)/ for a while | |
+| 27 | 2026-09-06 | You're going to wreck your eyesight if you play games all the time. | ゲームばかりしてると目を悪くするよ。 | be going to(予測)/ wreck / all the time | |
+| 28 | 2026-09-06 | Evaporation from oceans, lakes, and rivers creates 90% of the water in air. | 空気中の水分の90%は海洋・湖沼・河川から蒸発したものだ。 | 長い主語+単数動詞 / 名詞化(evaporation) | |
+| 29 | 2026-09-06 | When it comes to mathematics, he is second to none in his class. | 数学にかけては彼はクラスの誰にも引けを取らない。 | When it comes to ~ / second to none | |
 ## 自分の質問の英訳ストック
 
 けいさんがセッションで実際に言いたかったことの英語版。会話練習の素材に使う。

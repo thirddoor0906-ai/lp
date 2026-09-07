@@ -32,6 +32,13 @@
 | It goes without saying that ~ | 〜は言うまでもない | It goes without saying that health comes first. | 09-03 |
 | take 人 in one's arms | 〜を腕に抱く・抱きかかえる | She took the baby in her arms. | 09-03 |
 | stand(自動詞) | 立つ・立っていられる(≠我慢する) | He couldn't stand on his own. | 09-03 |
+| on the radio / on the news | ラジオで・ニュースで(前置詞は on) | I heard it on the news. | 09-06 |
+| come and 動詞 | 〜しに来る(×come to eat) | Come and see us sometime. | 09-06 |
+| for a while | しばらく、ちょっとの間 | Forget your troubles for a while. | 09-06 |
+| wreck ~ | 台無しにする、壊す | He wrecked his car. | 09-06 |
+| all the time | いつも、四六時中 | if you play games all the time | 09-06 |
+| When it comes to ~ | 〜に関して言えば | When it comes to cooking, she's amazing. | 09-06 |
+| second to none | 誰にも引けを取らない | Our service is second to none. | 09-06 |
 
 ## 構文・型
 
@@ -57,6 +64,9 @@
 | 疑問詞節が主語 | 「〜かということ」が主語になる | How they solved it remains a mystery. | 09-03 |
 | 否定の副詞+倒置 | Little/Never/Rarely 文頭で疑問文語順 | Little did I dream that... | 09-03 |
 | not so much A as B | AというよりむしろB | not so much angry as disappointed | 09-03 |
+| as = 〜しながら | 同時進行を表す接続詞 | as he fed his dog | 09-06 |
+| be going to(予測) | このままだと〜になる | You're going to catch a cold. | 09-06 |
+| 長い主語+単数動詞 | 名詞化した主語のまとまりを見抜く | Evaporation from ... creates 90% | 09-06 |
 
 ## けいさんの弱点傾向(随時更新)
 
