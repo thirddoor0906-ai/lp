@@ -48,6 +48,7 @@
 | 40 | 2026-09-07 | If you want to lose weight, you should cut down on between-meal snacks. | 体重を減らしたいのなら、間食は減らすべきだよ。 | lose weight / cut down **on** ~ | |
 | 41 | 2026-09-07 | I was flat on my back for a week with a terrible cold. | ひどい風邪を引いて、1週間寝込んでいた。 | flat on one's back(寝込む)/ with+病名 | |
 | 42 | 2026-09-07 | What's important isn't how many books you read, but what books you read. | 重要なのは何冊読むかでなく、どんな本を読むかである。 | not A but B / 疑問詞節がA・Bに入る | |
+| 43 | 2026-09-07 | I just want to say how thankful I am for all your help. | いろいろと助けてもらって、どれほど感謝しているかと伝えたくて。 | 間接疑問の語順(how thankful I am)/ thankful **for** | |
 
 ## 自分の質問の英訳ストック
 

@@ -57,6 +57,8 @@
 | cut down on ~ | 〜を減らす(前置詞は on) | I'm trying to cut down on coffee. | 09-07 |
 | flat on one's back | 寝込んで | I was flat on my back for a week. | 09-07 |
 | with + 病名 | 〜(の病気)で | in bed with the flu | 09-07 |
+| thankful for ~ | 〜に感謝している(前置詞は for) | I'm thankful for all your help. | 09-07 |
+| I just want to say ~ | ちょっと〜と伝えたくて | I just want to say thank you. | 09-07 |
 
 ## 構文・型
 
@@ -91,6 +93,7 @@
 | The 比較級…, the 比較級… | 〜すればするほど… | The more you practice, the better you get. | 09-06 |
 | 数量が主語 → 単数扱い | 250kg / 10 miles などは is | Ten miles is a long way. | 09-07 |
 | not A but B | AではなくB | not what you say but how you say it | 09-07 |
+| 間接疑問の語順 | how+形容詞+**平叙文の語順** | how thankful I am(×how thankful am I) | 09-07 |
 
 ## けいさんの弱点傾向(随時更新)
 
