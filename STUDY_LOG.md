@@ -39,6 +39,10 @@
 | 31 | 2026-09-06 | The fire, driven by an east wind, destroyed the center of the city. | 東風にあおられた火は市の中心部を焼き尽くした。 | 分詞の挿入(which was の省略) | |
 | 32 | 2026-09-06 | There was nothing but the ocean as far as the eye could see. | 見渡す限り海しかなかった。 | nothing but ~ / as far as the eye could see | |
 | 33 | 2026-09-06 | When I went to him he was sleeping, but I woke him up. | 私が訪ねた時彼は寝ていたが、起こしてやった。 | 過去形と過去進行形の重なり / wake 人 up | |
+| 34 | 2026-09-06 | The more skills one masters, the greater contribution one can make to society. | 多くの技術を修得すればするほど、社会に対して大きな貢献ができる。 | The 比較級…, the 比較級… / make a contribution to | |
+| 35 | 2026-09-06 | I started a new blog. I'll do my best to keep it going. | 新しいブログを始めた。続けられるよう頑張る。 | do one's best to ~ / keep it going | |
+| 36 | 2026-09-06 | There's no way I could do something like that in front of people. | 人前でそんなこと出来るはずもない。 | There's no way S+V / in front of people | |
+| 37 | 2026-09-06 | I'm near-sighted, so I can't make out what is written on that signboard. | 私は近視なので、あの看板に何が書いてあるか分からない。 | make out(判読する)/ what is written(疑問詞節) | |
 
 ## 自分の質問の英訳ストック
 

@@ -43,6 +43,13 @@
 | nothing but ~ | 〜しかない、ただ〜だけ | He drinks nothing but water. | 09-06 |
 | as far as the eye can see | 見渡す限り | nothing but the ocean as far as the eye could see | 09-06 |
 | wake 人 up | 人を起こす(代名詞は間に挟む) | I woke him up. | 09-06 |
+| make a contribution to ~ | 〜に貢献する(動詞は make) | make a great contribution to society | 09-06 |
+| do one's best to ~ | 〜するよう最善を尽くす | I'll do my best to finish it. | 09-06 |
+| keep it going | 続ける、この調子でいく | Let's keep it going! | 09-06 |
+| There's no way S+V | 〜なんてありえない | There's no way he'll agree. | 09-06 |
+| in front of people | 人前で | do something like that in front of people | 09-06 |
+| make out ~ | 見分ける、判読する、聞き取る | I can't make out his handwriting. | 09-06 |
+| near-sighted / far-sighted | 近視 / 遠視 | I'm near-sighted. | 09-06 |
 
 ## 構文・型
 
@@ -74,6 +81,7 @@
 | 受け身 be + 過去分詞 + by | 〜される | You will be disliked by girls. | 09-06 |
 | 分詞の挿入(コンマで挟む) | 主語を後ろから説明(which was の省略) | The fire, driven by an east wind, ... | 09-06 |
 | 過去形 + 過去進行形 | 「〜した時、〜していた」の重なり | When I went to him he was sleeping. | 09-06 |
+| The 比較級…, the 比較級… | 〜すればするほど… | The more you practice, the better you get. | 09-06 |
 
 ## けいさんの弱点傾向(随時更新)
 
