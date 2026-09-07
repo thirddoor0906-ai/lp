@@ -39,6 +39,10 @@
 | all the time | いつも、四六時中 | if you play games all the time | 09-06 |
 | When it comes to ~ | 〜に関して言えば | When it comes to cooking, she's amazing. | 09-06 |
 | second to none | 誰にも引けを取らない | Our service is second to none. | 09-06 |
+| play a joke on 人 | 人にいたずらをする(前置詞は on) | Don't play jokes on your brother. | 09-06 |
+| nothing but ~ | 〜しかない、ただ〜だけ | He drinks nothing but water. | 09-06 |
+| as far as the eye can see | 見渡す限り | nothing but the ocean as far as the eye could see | 09-06 |
+| wake 人 up | 人を起こす(代名詞は間に挟む) | I woke him up. | 09-06 |
 
 ## 構文・型
 
@@ -67,6 +71,9 @@
 | as = 〜しながら | 同時進行を表す接続詞 | as he fed his dog | 09-06 |
 | be going to(予測) | このままだと〜になる | You're going to catch a cold. | 09-06 |
 | 長い主語+単数動詞 | 名詞化した主語のまとまりを見抜く | Evaporation from ... creates 90% | 09-06 |
+| 受け身 be + 過去分詞 + by | 〜される | You will be disliked by girls. | 09-06 |
+| 分詞の挿入(コンマで挟む) | 主語を後ろから説明(which was の省略) | The fire, driven by an east wind, ... | 09-06 |
+| 過去形 + 過去進行形 | 「〜した時、〜していた」の重なり | When I went to him he was sleeping. | 09-06 |
 
 ## けいさんの弱点傾向(随時更新)
 

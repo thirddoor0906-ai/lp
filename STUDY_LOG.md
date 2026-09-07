@@ -35,6 +35,11 @@
 | 27 | 2026-09-06 | You're going to wreck your eyesight if you play games all the time. | ゲームばかりしてると目を悪くするよ。 | be going to(予測)/ wreck / all the time | |
 | 28 | 2026-09-06 | Evaporation from oceans, lakes, and rivers creates 90% of the water in air. | 空気中の水分の90%は海洋・湖沼・河川から蒸発したものだ。 | 長い主語+単数動詞 / 名詞化(evaporation) | |
 | 29 | 2026-09-06 | When it comes to mathematics, he is second to none in his class. | 数学にかけては彼はクラスの誰にも引けを取らない。 | When it comes to ~ / second to none | |
+| 30 | 2026-09-06 | You will be disliked by girls if you play practical jokes on them. | 女子にいたずらすると嫌われるよ。 | 受け身 be disliked by / play a joke **on** 人 | |
+| 31 | 2026-09-06 | The fire, driven by an east wind, destroyed the center of the city. | 東風にあおられた火は市の中心部を焼き尽くした。 | 分詞の挿入(which was の省略) | |
+| 32 | 2026-09-06 | There was nothing but the ocean as far as the eye could see. | 見渡す限り海しかなかった。 | nothing but ~ / as far as the eye could see | |
+| 33 | 2026-09-06 | When I went to him he was sleeping, but I woke him up. | 私が訪ねた時彼は寝ていたが、起こしてやった。 | 過去形と過去進行形の重なり / wake 人 up | |
+
 ## 自分の質問の英訳ストック
 
 けいさんがセッションで実際に言いたかったことの英語版。会話練習の素材に使う。
