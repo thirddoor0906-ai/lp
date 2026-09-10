@@ -10,21 +10,21 @@
 | 2 | 2026-08-30 | Ants can lift things that are more than 50 times their own weight. | アリは自分の体重の50倍以上のものを持ち上げられる。 | 倍数表現 X times their own weight の語順 | 09-05:× → 次回09-06(翌日) |
 | 3 | 2026-08-30 | I like her sense of style. | 彼女のファッションセンスが好き。 | sense of X の名詞化(×Her sense is good) | 09-05:× → 次回09-06(翌日) |
 | 4 | 2026-08-30 | Former pop stars are just plain old women by the time they're 40. | かつてのアイドルも40過ぎるとただのおばさんか。 | just plain ~(ただの)/ by the time S+V(〜する頃には) | 09-05:× → 次回09-06(翌日) |
-| 5 | 2026-08-30 | Once you've formed a bad habit, you can't get rid of it easily. | いったん悪い癖がつくと、容易に直すことは出来ない。 | Once+完了形 / form a habit / get rid of | 09-05:× → 次回09-06(翌日) |
+| 5 | 2026-08-30 | Once you've formed a bad habit, you can't get rid of it easily. | いったん悪い癖がつくと、容易に直すことは出来ない。 | Once+完了形 / form a habit / get rid of | 09-05:× → 次回09-06(翌日) / 09-10:× → 次回09-11(翌日) |
 | 6 | 2026-08-30 | I'm going to change clothes. Please look the other way for a minute. | 着替えるから、ちょっとあっちを向いてて。 | look the other way(比喩:見て見ぬふり も) | 09-05:× → 次回09-06(翌日) |
-| 7 | 2026-08-30 | I'll be in touch again as soon as I have more detailed information. | 詳しいことがわかり次第、また連絡します。 | be in touch / as soon as+現在形 | 09-05:× → 次回09-06(翌日) |
+| 7 | 2026-08-30 | I'll be in touch again as soon as I have more detailed information. | 詳しいことがわかり次第、また連絡します。 | be in touch / as soon as+現在形 | 09-05:× → 次回09-06(翌日) / 09-10:× → 次回09-11(翌日) |
 | 8 | 2026-08-30 | I want to live a relaxed life in the country after I retire. | 退職したら田舎でのんびり暮らしたい。 | live a ~ life / the country=田舎 / after+現在形 | 09-05:× → 次回09-06(翌日) |
 | 9 | 2026-08-30 | (Sales increased) 20% over the same period of last year. | (売上は)前年同期比20%増。※スクショ前半欠け・要確認 | over the same period of last year(前年同期比) | |
-| 10 | 2026-08-30 | He came down with a cold and had to be away from work. | 彼は風邪をひいて仕事を休まなければならなかった。 | come down with / be away from work | 09-05:× → 次回09-06(翌日) |
+| 10 | 2026-08-30 | He came down with a cold and had to be away from work. | 彼は風邪をひいて仕事を休まなければならなかった。 | come down with / be away from work | 09-05:× → 次回09-06(翌日) / 09-10:× → 次回09-11(翌日) |
 | 11 | 2026-08-30 | Among the five of us, she, without a doubt, speaks the most languages. | 5人の中で、間違いなく彼女が一番多くの言語を話す。 | the five of us / without a doubt(挿入)/ the most+複数名詞 | 09-05:× → 次回09-06(翌日) |
 | 12 | 2026-09-03 | If you leave your textbooks at school during the break, they'll get confiscated. | 休み中に置き勉してると没収されるんだよな。 | leave A at B / get+過去分詞(口語の受け身) | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
 | 13 | 2026-09-03 | This nation's economy has been growing at a rapid pace in recent years. | この国の経済は近年とんとん拍子に成長しています。 | 現在完了進行形 / at a ~ pace | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
-| 14 | 2026-09-03 | I may have to come home late. In that case, I'll call you. | 遅くなるかもしれない。その場合は電話するよ。 | may have to(助動詞の重複回避)/ In that case | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
-| 15 | 2026-09-03 | I have attached instructions on how to use FTP to access our files. | 私どものファイルにアクセスするためのFTPの使い方を添付します。 | attach / instructions on how to / 目的のto不定詞 | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
+| 14 | 2026-09-03 | I may have to come home late. In that case, I'll call you. | 遅くなるかもしれない。その場合は電話するよ。 | may have to(助動詞の重複回避)/ In that case | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) / 09-10:○ → 次回09-12(2日後) |
+| 15 | 2026-09-03 | I have attached instructions on how to use FTP to access our files. | 私どものファイルにアクセスするためのFTPの使い方を添付します。 | attach / instructions on how to / 目的のto不定詞 | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) / 09-10:× → 次回09-11(翌日) |
 | 16 | 2026-09-03 | Cherry blossoms last only for a few days, a week at the most. | 桜の花は数日、せいぜい一週間しか持たない。 | last(持続する)/ at the most | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
-| 17 | 2026-09-03 | "You must be tired after a long day." "No, not in the least." | 「長い1日だったのでお疲れでしょう」「いいえ、全然」 | must be(推量)/ not in the least | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
-| 18 | 2026-09-03 | Now that he is old, it is your duty to look after him. | 彼はもう高齢ですから、世話をするのはあなたの務めなのです。 | Now that S+V / 形式主語 it is ~ to do / look after | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
-| 19 | 2026-09-03 | Would you have asked me this question if I had been a man? | 私が男性だったとしても同じ質問をするのですか? | 仮定法過去完了(would have+pp / had+pp) | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
+| 17 | 2026-09-03 | "You must be tired after a long day." "No, not in the least." | 「長い1日だったのでお疲れでしょう」「いいえ、全然」 | must be(推量)/ not in the least | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) / 09-10:× → 次回09-11(翌日) |
+| 18 | 2026-09-03 | Now that he is old, it is your duty to look after him. | 彼はもう高齢ですから、世話をするのはあなたの務めなのです。 | Now that S+V / 形式主語 it is ~ to do / look after | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) / 09-10:× → 次回09-11(翌日) |
+| 19 | 2026-09-03 | Would you have asked me this question if I had been a man? | 私が男性だったとしても同じ質問をするのですか? | 仮定法過去完了(would have+pp / had+pp) | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) / 09-10:○ → 次回09-12(2日後) |
 | 20 | 2026-09-03 | Just when the first human beings will reach Mars remains to be seen. | 人間が最初に火星に到達するのはいつになるか、まだ分かっていない。 | 疑問詞節が主語 / remains to be seen | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
 | 21 | 2026-09-03 | Little did I dream that we would expand our business to the U.S. | 事業をアメリカに広げるとは夢にも思わなかった。 | 否定の副詞が文頭→倒置(Little did I ~) | 09-03:× → 次回09-04(翌日) / 09-05:× → 次回09-06(翌日) |
 | 22 | 2026-09-03 | The question is not so much what it is as how it looks. | 問題は、その本質よりもむしろ外観である。 | not so much A as B / 疑問詞節がA・Bに入る | 09-03:× → 次回09-04(翌日) |
@@ -37,17 +37,17 @@
 | 29 | 2026-09-06 | When it comes to mathematics, he is second to none in his class. | 数学にかけては彼はクラスの誰にも引けを取らない。 | When it comes to ~ / second to none | |
 | 30 | 2026-09-06 | You will be disliked by girls if you play practical jokes on them. | 女子にいたずらすると嫌われるよ。 | 受け身 be disliked by / play a joke **on** 人 | |
 | 31 | 2026-09-06 | The fire, driven by an east wind, destroyed the center of the city. | 東風にあおられた火は市の中心部を焼き尽くした。 | 分詞の挿入(which was の省略) | |
-| 32 | 2026-09-06 | There was nothing but the ocean as far as the eye could see. | 見渡す限り海しかなかった。 | nothing but ~ / as far as the eye could see | |
+| 32 | 2026-09-06 | There was nothing but the ocean as far as the eye could see. | 見渡す限り海しかなかった。 | nothing but ~ / as far as the eye could see | 09-10:× → 次回09-11(翌日) |
 | 33 | 2026-09-06 | When I went to him he was sleeping, but I woke him up. | 私が訪ねた時彼は寝ていたが、起こしてやった。 | 過去形と過去進行形の重なり / wake 人 up | |
-| 34 | 2026-09-06 | The more skills one masters, the greater contribution one can make to society. | 多くの技術を修得すればするほど、社会に対して大きな貢献ができる。 | The 比較級…, the 比較級… / make a contribution to | |
-| 35 | 2026-09-06 | I started a new blog. I'll do my best to keep it going. | 新しいブログを始めた。続けられるよう頑張る。 | do one's best to ~ / keep it going | |
+| 34 | 2026-09-06 | The more skills one masters, the greater contribution one can make to society. | 多くの技術を修得すればするほど、社会に対して大きな貢献ができる。 | The 比較級…, the 比較級… / make a contribution to | 09-10:× → 次回09-11(翌日) |
+| 35 | 2026-09-06 | I started a new blog. I'll do my best to keep it going. | 新しいブログを始めた。続けられるよう頑張る。 | do one's best to ~ / keep it going | 09-10:× → 次回09-11(翌日) |
 | 36 | 2026-09-06 | There's no way I could do something like that in front of people. | 人前でそんなこと出来るはずもない。 | There's no way S+V / in front of people | |
-| 37 | 2026-09-06 | I'm near-sighted, so I can't make out what is written on that signboard. | 私は近視なので、あの看板に何が書いてあるか分からない。 | make out(判読する)/ what is written(疑問詞節) | |
+| 37 | 2026-09-06 | I'm near-sighted, so I can't make out what is written on that signboard. | 私は近視なので、あの看板に何が書いてあるか分からない。 | make out(判読する)/ what is written(疑問詞節) | 09-10:× → 次回09-11(翌日) |
 | 38 | 2026-09-07 | Two hundred fifty kilograms is an extraordinary weight even for a sumo wrestler. | 250キロというのは相撲取りとしても並外れた体重だ。 | 数量が主語=単数扱い(is)/ even for ~ | |
 | 39 | 2026-09-07 | When he was in the military, he conformed to the strict army rules. | 彼は兵役中は軍隊の厳しい規則に従っていた。 | be in the military / conform **to** ~ | |
-| 40 | 2026-09-07 | If you want to lose weight, you should cut down on between-meal snacks. | 体重を減らしたいのなら、間食は減らすべきだよ。 | lose weight / cut down **on** ~ | |
-| 41 | 2026-09-07 | I was flat on my back for a week with a terrible cold. | ひどい風邪を引いて、1週間寝込んでいた。 | flat on one's back(寝込む)/ with+病名 | |
-| 42 | 2026-09-07 | What's important isn't how many books you read, but what books you read. | 重要なのは何冊読むかでなく、どんな本を読むかである。 | not A but B / 疑問詞節がA・Bに入る | |
+| 40 | 2026-09-07 | If you want to lose weight, you should cut down on between-meal snacks. | 体重を減らしたいのなら、間食は減らすべきだよ。 | lose weight / cut down **on** ~ | 09-10:× → 次回09-11(翌日) |
+| 41 | 2026-09-07 | I was flat on my back for a week with a terrible cold. | ひどい風邪を引いて、1週間寝込んでいた。 | flat on one's back(寝込む)/ with+病名 | 09-10:× → 次回09-11(翌日) |
+| 42 | 2026-09-07 | What's important isn't how many books you read, but what books you read. | 重要なのは何冊読むかでなく、どんな本を読むかである。 | not A but B / 疑問詞節がA・Bに入る | 09-10:× → 次回09-11(翌日) |
 | 43 | 2026-09-07 | I just want to say how thankful I am for all your help. | いろいろと助けてもらって、どれほど感謝しているかと伝えたくて。 | 間接疑問の語順(how thankful I am)/ thankful **for** | |
 
 ## 自分の質問の英訳ストック
