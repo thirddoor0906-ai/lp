@@ -59,6 +59,36 @@
 | with + 病名 | 〜(の病気)で | in bed with the flu | 09-07 |
 | thankful for ~ | 〜に感謝している(前置詞は for) | I'm thankful for all your help. | 09-07 |
 | I just want to say ~ | ちょっと〜と伝えたくて | I just want to say thank you. | 09-07 |
+| call 人 up | 〜に電話する | He could have called her up. | 09-12 |
+| take care of ~ | 対応する、引き受ける、世話する | Can you take care of it? | 09-12 |
+| not at all ~ | 決して〜ない | It isn't at all rare. | 09-12 |
+| preferable to ~ | 〜より好ましい(比較はthanでなくto) | A is preferable to B. | 09-12 |
+| all this way | わざわざ遠くから | come all this way to see me | 09-12 |
+| in the light of ~ | 〜に照らして | in the light of your conscience | 09-12 |
+| at a rough estimate | ざっと見積もって | At a rough estimate, two weeks. | 09-12 |
+| if at all possible | できることなら | If at all possible, go yourself. | 09-12 |
+| look into ~ | 調べる、調査する | look into the matter | 09-12 |
+| turn to 人 for help | 〜に助けを求める | He turned to me for help. | 09-12 |
+| change for the worse | 悪化する(⇔for the better) | The weather will change for the worse. | 09-12 |
+| Would it be OK if I 過去形? | 〜してもよろしいですか(丁寧) | Would it be OK if I asked them? | 09-12 |
+| eat out | 外食する | eating at home vs eating out | 09-12 |
+| according to ~ | 〜に応じて、〜によれば | taxed according to its malt content | 09-12 |
+| a large amount of ~ | ばく大な量の(不可算名詞に) | a large amount of wealth | 09-12 |
+| either A or B | AかBのどちらか | either English or Spanish | 09-12 |
+| They say (that) ~ | 〜と言われている | They say you shouldn't take rumors seriously. | 09-12 |
+| take ~ seriously | 〜を真に受ける | Don't take rumors seriously. | 09-12 |
+| easier said than done | 言うは易く行うは難し | That's easier said than done. | 09-12 |
+| It turns out that ~ | 〜であることが分かる | It turns out that the house is infested. | 09-12 |
+| be infested with ~ | 〜がはびこっている | infested with garter snakes | 09-12 |
+| provide A for B | BにAを提供する | provide benefits for its employees | 09-12 |
+| stick around | その辺でぶらぶら待つ | I stuck around for a while. | 09-12 |
+| to see if ~ | 〜かどうか確かめるために | to see if anyone else would come | 09-12 |
+| with nothing but ~ | 〜だけを持って | with nothing but the clothes on my back | 09-12 |
+| the clothes on one's back | 着の身着のまま | escape with the clothes on my back | 09-12 |
+| make up for ~ | 埋め合わせる、取り戻す | make up for lost time | 09-12 |
+| call on ~ | 頼る、活用する | call on all his experience | 09-12 |
+| carry out ~ | やり遂げる、実行する | carry out the plan | 09-12 |
+| live to be + 年齢 | 〜歳まで生きる | live to be over ninety | 09-12 |
 
 ## 構文・型
 
@@ -94,6 +124,16 @@
 | 数量が主語 → 単数扱い | 250kg / 10 miles などは is | Ten miles is a long way. | 09-07 |
 | not A but B | AではなくB | not what you say but how you say it | 09-07 |
 | 間接疑問の語順 | how+形容詞+**平叙文の語順** | how thankful I am(×how thankful am I) | 09-07 |
+| 形容詞の語順 | 大小→新旧→色→材質 の順 | an old wooden box | 09-12 |
+| It is 形容詞 **of** 人 to do | 人の性質を評価する形(×for) | It was nice of you to come. | 09-12 |
+| 形式主語+for 人 to do | 〜が…するのは | It isn't possible for us to make up. | 09-12 |
+| 完了分詞構文 having+過去分詞 | 〜してしまってから | Having thought about it carefully, ... | 09-12 |
+| 形容詞句が文頭(Being の省略) | 〜なので(理由の分詞構文) | Unable to accomplish it, he turned to me. | 09-12 |
+| 否定の繰り上げ | I don't think/believe ~ will(×I think ~ won't) | I do not believe it will change. | 09-12 |
+| must be able to ~ | 〜できなければならない(助動詞+be able to) | You must be able to speak either... | 09-12 |
+| 譲歩の倒置 形容詞+as S+V | 〜だけれども | Young as he is, ... | 09-12 |
+| as 形容詞 a 名詞 as | 〜と同じくらい…な〜 | as great a mathematician as ever lived | 09-12 |
+| may not(禁止) | 〜してはいけない | may not enter the theater | 09-12 |
 
 ## けいさんの弱点傾向(随時更新)
 

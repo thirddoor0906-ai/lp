@@ -49,6 +49,37 @@
 | 41 | 2026-09-07 | I was flat on my back for a week with a terrible cold. | ひどい風邪を引いて、1週間寝込んでいた。 | flat on one's back(寝込む)/ with+病名 | 09-10:× → 次回09-11(翌日) |
 | 42 | 2026-09-07 | What's important isn't how many books you read, but what books you read. | 重要なのは何冊読むかでなく、どんな本を読むかである。 | not A but B / 疑問詞節がA・Bに入る | 09-10:× → 次回09-11(翌日) |
 | 43 | 2026-09-07 | I just want to say how thankful I am for all your help. | いろいろと助けてもらって、どれほど感謝しているかと伝えたくて。 | 間接疑問の語順(how thankful I am)/ thankful **for** | |
+| 44 | 2026-09-12 | I found three silver coins in an old wooden box in the attic. | 屋根裏の古い木箱の中から3枚の銀貨が出てきた。 | 形容詞の語順(old wooden)/ 場所の前置詞句の重ね方 | |
+| 45 | 2026-09-12 | If he had known her phone number, he could have called her up. | もし彼が彼女の電話番号を知っていたら、電話できたのに。 | 仮定法過去完了 / call 人 up | |
+| 46 | 2026-09-12 | Even a clock that is stopped shows the correct time twice a day. | 止まった時計も1日に2回は正しい時刻を示す。 | 関係代名詞that / twice a day(頻度) | |
+| 47 | 2026-09-12 | I don't have a lot of time. Can you take care of it? | あまり時間がないの。それ任せていい? | take care of ~(対応する・引き受ける) | |
+| 48 | 2026-09-12 | You want the Number 11. It stops in front of the post office. | 11番にお乗りにならないと。郵便局の前に止まりますから。 | You want ~(〜がいいですよ、案内の定型)/ in front of | |
+| 49 | 2026-09-12 | It isn't at all rare to live to be over ninety years old. | 90歳以上生きることは決してまれではない。 | not at all ~ / live to be + 年齢 / 形式主語 | |
+| 50 | 2026-09-12 | A conservative tie is preferable to a loud one for a job interview. | 就職の面接には派手なネクタイより地味なネクタイの方が好ましい。 | preferable **to**(比較のto)/ one=代名詞 / loud=派手な | |
+| 51 | 2026-09-12 | It was nice of you to come all this way to see me. | 遠くからわざわざお越しいただいてありがとうございました。 | It is 形容詞 **of** 人 to do / all this way | |
+| 52 | 2026-09-12 | You must make decisions about your responsibility in the light of your conscience. | 自らの責任において、良心に照らして決定を下さなくてはならない。 | in the light of ~ / make decisions about | |
+| 53 | 2026-09-12 | At a rough estimate, I would say the job will take two weeks. | ざっと見積もって、その仕事は二週間かかるだろう。 | At a rough estimate / I would say ~(控えめな断定)/ take+時間 | |
+| 54 | 2026-09-12 | If at all possible, you should go and look into the matter yourself. | できるだけ君本人が行って調べたほうがいいよ。 | If at all possible / go and 動詞 / look into / 再帰の強調yourself | |
+| 55 | 2026-09-12 | Unable to accomplish the task by himself, he turned to me for help. | 彼一人では無理な仕事だったため、私に助けを求めてきた。 | 形容詞句が文頭(Being の省略)/ turn to 人 for help | |
+| 56 | 2026-09-12 | I do not believe the weather will change for the worse next week. | 来週天気がくずれることはないでしょう。 | 否定の繰り上げ(I don't believe ~ will)/ change for the worse | |
+| 57 | 2026-09-12 | I have a few questions. Would it be OK if I asked them? | 少し質問があるのですが、よろしいですか? | Would it be OK if I + 過去形(丁寧な仮定法) | |
+| 58 | 2026-09-12 | On cloudy days, you can hear distant sounds better than in clear weather. | 曇天の日は晴天のときより音がよく聞こえる。 | On + 複数形の日(〜の日には)/ 副詞の比較級 better than | |
+| 59 | 2026-09-12 | Some people think eating at home is better for you than eating out. | 家で食事するのは外で食べるより良いと考える人もいる。 | 動名詞が主語 / Some people ~(〜な人もいる)/ eat out | |
+| 60 | 2026-09-12 | Beer is taxed according to its malt content, so low-malt beer is cheaper. | ビールは麦芽の含有量によって課税されるから、発泡酒の方が安い。 | 受け身 be taxed / according to ~ | |
+| 61 | 2026-09-12 | In these two or three years, he acquired a large amount of wealth. | 彼はこの2、3年でばく大な財産を手に入れた。 | a large amount of + 不可算 / acquire | |
+| 62 | 2026-09-12 | You must be able to speak either English or Spanish in this company. | この会社では英語かスペイン語どちらかの会話能力が必須だ。 | must be able to(助動詞+be able to)/ either A or B | |
+| 63 | 2026-09-12 | They say you shouldn't take rumors seriously, but that's easier said than done. | 流言飛語に惑わされるなと言うが、言うは易く行うは難し。 | They say ~(〜と言われている)/ take ~ seriously / easier said than done | |
+| 64 | 2026-09-12 | It turns out that that house is infested with garter snakes. They're everywhere. | その家にガーターヘビが出ることが分かった。どこにでもいる。 | It turns out that ~ / be infested with ~ | |
+| 65 | 2026-09-12 | Mother, having thought about it carefully, I don't feel I should marry him. | お母さん、じっくり考えたけど、結婚する気になれないの。 | 完了分詞構文 having+過去分詞 / I don't feel (that) ~ | |
+| 66 | 2026-09-12 | The company provides health and life insurance benefits for all of its employees. | その会社は全社員に健康保険と生命保険をかけている。 | provide A for B / 名詞の連結(health and life insurance benefits) | |
+| 67 | 2026-09-12 | I stuck around for a while to see if anyone else would come. | 誰か他に来るんじゃないかと、しばらくその辺をブラブラした。 | stick around / to see if ~(〜かどうか確かめるために) | |
+| 68 | 2026-09-12 | I hope that I'll be able to help you at some other time. | また別の機会にお役に立てれば幸いです。 | I hope that ~ / at some other time | |
+| 69 | 2026-09-12 | I escaped from the fire with nothing but the clothes on my back. | 着の身着のままで火事から逃げた。 | with nothing but ~ / the clothes on one's back | |
+| 70 | 2026-09-12 | I think it isn't possible for us to make up for lost time. | 遅れを取り戻すのは無理だと思うんです。 | 形式主語+for 人 to do / make up for ~ | |
+| 71 | 2026-09-12 | This is a sentence that has the syllable count of a good haiku. | これは良い俳句の音節数を持つ文である。 | 関係代名詞that / the ~ of A(Aの〜) | |
+| 72 | 2026-09-12 | Children who are sixteen years old or younger may not enter the theater. | 16歳以下の子どもは劇場に入れません。 | 関係代名詞who / or younger / may not(禁止) | |
+| 73 | 2026-09-12 | He had to call on all his experience to carry out the plan. | 彼はその計画をやり遂げるのに経験をすべて活用しなければならなかった。 | call on ~(頼る・活用する)/ carry out ~ | |
+| 74 | 2026-09-12 | Young as he is, he is as great a mathematician as ever lived. | 若いけれども彼はこれまでに例のないほど偉大な数学者である。 | 譲歩の倒置(形容詞+as S+V)/ as 形容詞 a 名詞 as / as ever lived | |
 
 ## 自分の質問の英訳ストック
 
